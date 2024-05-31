@@ -1,4 +1,4 @@
-name: ACM UCR Website
+name: Association of Information Systems
 on:
   pull_request:
     branches: [main, dev]
