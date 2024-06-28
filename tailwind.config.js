@@ -7,7 +7,18 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        nunito: ["Nunito", "sans-serif"],
+      },
+      colors: {
+        ais: {
+          blue: "#051D40",
+          red: "#CA064D",
+          gray: "#DCE6F9",
+        },
+      },
+    },
   },
   plugins: [],
 };
