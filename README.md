@@ -1,4 +1,4 @@
-# ACM UCR Website Template
+# AIS Official Website
 
 ![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -11,11 +11,11 @@
 
 ## Figma
 
-[ACM UCR Website Template Figma Design File](https://www.figma.com/design/Bhz6C7rBlK55l0ycqDLi1Z/AIS-website?node-id=0-1&t=zm25Ga7vGzINJxfc-0)
+[AIS Official Website Figma Design File](https://www.figma.com/design/Bhz6C7rBlK55l0ycqDLi1Z/AIS-website?node-id=0-1&t=zm25Ga7vGzINJxfc-0)
 
 ## Node.js
 
-ACM UCR Website Template runs on Node.js Version 20.10.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
+AIS Official Website runs on Node.js Version 20.10.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
 
 ## Next.js
 
