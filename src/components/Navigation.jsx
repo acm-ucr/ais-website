@@ -7,7 +7,7 @@ import { items } from "@/data/nav";
 
 const Navigation = () => {
   return (
-    <div className="h-36 bg-ais-blue w-full flex justify-between items-center text-xl px-5">
+    <div className="h-36 bg-ais-blue w-full flex justify-between items-center text-2xl px-5">
       <Link href="/" className="flex items-center pl-20 space-x-1">
         <Image alt="logo" src={logo} className="h-auto w-36" />
         <div className="text-white text-2xl whitespace-nowrap">
