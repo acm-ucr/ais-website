@@ -6,7 +6,7 @@ import AIS from "../../public/AIS.svg";
 
 const Landing = () => {
   return (
-    <div className="relative h-screen bg-blue-900 overflow-hidden">
+    <div className="relative h-screen bg-gradient-to-b from-ais-blue via-[#03125E] to-[#010580] overflow-hidden">
       {/* Waves */}
       <div className="absolute right-1/4 bottom-1/3 w-full h-full">
         <Image src={wave1} alt="Wave 1" layout="fill" objectFit="cover" />
@@ -16,14 +16,18 @@ const Landing = () => {
       </div>
 
       {/* Content */}
-      <div className="absolute bottom-64 right-64 flex flex-col text-white">
-        <h1 className="text-4xl mb-8">EMPOWERING FUTURE INNOVATORS</h1>
+      <div className="absolute bottom-[20%] right-[20%] items-center flex flex-col text-white">
+        <h1 className="text-5xl mb-4 font-bold">
+          EMPOWERING FUTURE INNOVATORS
+        </h1>
 
-        <div className="flex items-center mb-8">
-          <Image src={AIS} alt="AIS Logo" />
-          <h2 className="text-2xl">ASSOCIATION FOR</h2>
-          <h3 className="text-2xl font-semibold">INFORMATION SYSTEMS</h3>
-          <h4 className="text-2xl">AT UCR</h4>
+        <div className="flex items-center mb-4">
+          <Image src={AIS} alt="AIS Logo" width={300} />
+          <div>
+            <h2 className="text-4xl">ASSOCIATION FOR</h2>
+            <h3 className="text-4xl font-bold">INFORMATION SYSTEMS</h3>
+            <h4 className="text-4xl">AT UCR</h4>
+          </div>
         </div>
       </div>
     </div>
