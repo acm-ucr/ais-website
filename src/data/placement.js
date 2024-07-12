@@ -16,12 +16,12 @@ export const Placements = [
     image: Hodson,
   },
   {
+    image: Aloha,
+  },
+  {
     image: PWC,
   },
   {
     image: Sileo,
-  },
-  {
-    image: Aloha,
   },
 ];
