@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import GroupPhoto from "@/public/AIS_About_GroupPhoto.png";
+import GroupPhoto from "@/public/AIS_About_GroupPhoto.webp";
 
 const About = () => {
   return (
