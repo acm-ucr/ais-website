@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Kitten from "@/public/Kitten.png";
+import Kitten from "@/public/Kitten.webp";
 
 const About = () => {
   return (
