@@ -13,7 +13,9 @@ module.exports = {
       },
       colors: {
         ais: {
-          blue: "#051D40",
+          "blue-100": "#051D40",
+          "blue-200": "#03125E",
+          "blue-300": "#010580",
           red: "#CA064D",
           gray: "#DCE6F9",
         },
