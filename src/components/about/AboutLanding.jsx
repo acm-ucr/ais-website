@@ -10,7 +10,7 @@ const AboutLanding = () => {
       </div>
       <div className="relative h-screen bg-gradient-to-b from-ais-blue-100 via-ais-blue-200  to-ais-blue-300">
         <div className="absolute inset-0 z-0 overflow-hidden">
-          <Image className="w-full" src={aboutLanding} />
+          <Image className="w-full" src={aboutLanding} alt="About Wave" />
         </div>
       </div>
     </div>
