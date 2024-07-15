@@ -16,7 +16,7 @@ const Navigation = () => {
           <span className="font-normal">AT UCR</span>
         </div>
       </Link>
-      <div className="space-x-6 md:pl-0 pl-4 pr-20 text-white items-center flex flex-row whitespace-nowrap gap-4 sm:w-3/5 w-2/5 justify-around">
+      <div className="hidden md:flex justify-end w-full lg:gap-4 lg:space-x-5 mr-12 text-white">
         {items.map((item, index) => (
           <Link
             href={item.link}

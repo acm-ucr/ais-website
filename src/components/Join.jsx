@@ -4,7 +4,7 @@ import imagename from "@/public/whyJoin.webp";
 
 const Join = () => {
   return (
-    <div className="flex flex-row mx-28 my-12 gap-3 justify-center font-nunito">
+    <div className="flex mx-28 my-12 gap-3 justify-center font-nunito">
       <div className="flex flex-col justify-center space-y-6 mr-12 w-2/3 py-5">
         <div className="flex justify-end text-right font-bold text-4xl">
           WHY JOIN
@@ -19,7 +19,7 @@ const Join = () => {
           non odio euismod risus feugiat in ante metus dictum at tempor commodo
           ullamcorper a lacus vestibulum sed arcu non odio euismod sed
         </div>
-        <div className="flex flex-row font-semibold gap-8 justify-between text-2xl">
+        <div className="flex font-semibold gap-8 justify-between text-2xl">
           <div>100+ members</div>
           <div>50+ events</div>
           <div>50+ alumni</div>
