@@ -5,7 +5,7 @@ import { VALUES } from "@/data/cards";
 const Values = () => {
   return (
     <div className="flex justify-center w-full">
-      <div className="flex justify-between w-8/12">
+      <div className="flex justify-center gap-10 w-full">
         {VALUES.map((item, index) => (
           <Value
             title={item.title}
