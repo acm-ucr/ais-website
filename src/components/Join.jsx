@@ -1,13 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import imagename from "@/public/whyJoin.webp";
+import Title from "./Title";
 
 const Join = () => {
   return (
     <div className="flex mx-28 my-12 gap-3 justify-center font-nunito">
       <div className="flex flex-col justify-center space-y-6 mr-12 w-2/3 py-5">
-        <div className="flex justify-end text-right font-bold text-4xl">
-          WHY JOIN
+        <div className="flex justify-end text-right">
+          <Title title={"WHY JOIN"} />
         </div>
         <div className="text-right text-lg my-4">
           suspendisse ultrices gravida dictum fusce ut placerat orci nulla

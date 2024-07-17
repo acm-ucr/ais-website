@@ -4,7 +4,7 @@ import Image from "next/image";
 const Value = ({ title, text, image, color }) => {
   return (
     <div
-      className={`flex flex-col items-center w-80 h-88 mx-10 p-3 gap-4 rounded-lg text-white font-nunito ${color}`}
+      className={`flex flex-col items-center w-80 h-88  mx-10 p-6 gap-4 rounded-2xl text-white font-nunito ${color}`}
     >
       <Image src={image} alt="icon" className="mt-2" />
       <div className="font-extrabold text-4xl text-center tracking-wide">

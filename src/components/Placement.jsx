@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Title from "./Title";
 import { Placements } from "@/data/placement";
 
 const Placement = () => {
@@ -8,7 +9,7 @@ const Placement = () => {
       <div className="h-1 border-0 bg-black w-1/12 rounded-full mb-3" />
 
       <div className="text-3xl h-1/5 flex justify-center font-nunito">
-        Our Placements
+        <Title title={"Our Placements"} />
       </div>
       <div className="text-2xl flex justify-center mb-9 font-nunito italic">
         Check out where we work

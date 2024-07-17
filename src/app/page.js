@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <div className="flex flex-col gap-5">
       <Landing />
-      <Join />
       <Values />
+      <Join />
       <Placement />
     </div>
   );
