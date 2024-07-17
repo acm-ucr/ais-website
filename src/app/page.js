@@ -1,4 +1,3 @@
-
 import Join from "@/components/Join";
 import Landing from "@/components/Landing";
 import Placement from "@/components/Placement";
