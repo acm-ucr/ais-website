@@ -1,9 +1,9 @@
-import Sony from "@/Placements/Sony.svg";
-import EY from "@/Placements/EY.svg";
-import Hodson from "@/Placements/Hodson.svg";
-import PWC from "@/Placements/PWC.svg";
-import Sileo from "@/Placements/Sileo.svg";
-import Aloha from "@/Placements/Aloha.svg";
+import Sony from "@/public/placements/Sony.svg";
+import EY from "@/public/placements/EY.svg";
+import Hodson from "@/public/placements/Hodson.svg";
+import PWC from "@/public/placements/PWC.svg";
+import Sileo from "@/public/placements/Sileo.svg";
+import Aloha from "@/public/placements/Aloha.svg";
 
 export const Placements = [
   {
