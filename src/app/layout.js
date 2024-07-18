@@ -3,7 +3,6 @@ import "./globals.css";
 import { Nunito } from "next/font/google";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import Placement from "@/components/Placement";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -23,7 +22,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${nunito.variable} w-full h-full overflow-x-hidden font-nunito`}
       >
-        <Placement />
         <Navigation />
         {children}
         <Footer />
