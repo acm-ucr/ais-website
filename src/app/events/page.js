@@ -1,12 +1,11 @@
-import Filter from "@/components/calendar/Filter";
 import Offer from "@/components/calendar/Offer";
-import React from "react";
+import Wrapped from "@/components/calendar/WrappedEvents";
 
 const page = () => {
   return (
     <div>
       <Offer />
-      <Filter />
+      <Wrapped />
     </div>
   );
 };
