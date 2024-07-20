@@ -1,17 +1,17 @@
 import React from "react";
 import Link from "next/link";
 
-const Button = ({ text, link }) => {
+const Button = ({ text, link, target }) => {
   return (
     <button
       className={`rounded-full text-[2rem] font-plain text-center inline-block
       ${
         text === "JOIN US"
-          ? "border-[3px] border-white bg-transparent text-white py-[10px] px-[30px] "
-          : "border-[3px] border-[#021260] bg-white text-[#021260] py-[10px] px-[30px]"
+          ? "border-2 border-white bg-transparent text-white py-2 px-8 "
+          : "border-2 border-ais-blue-100 bg-white text-ais-blue-100 py-2 px-8"
       }`}
     >
-      <Link href={link} className="inline-block w-full h-full">
+      <Link href={link} target={target} className="inline-block w-full h-full">
         {text}
       </Link>
     </button>
