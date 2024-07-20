@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import wave1 from "@/public/wave1.svg";
