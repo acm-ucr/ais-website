@@ -1,7 +1,12 @@
 import React from "react";
+import Board from "./Board";
 
 const Boards = () => {
-  return <div>Boards</div>;
+  return (
+    <div>
+      <Board />
+    </div>
+  );
 };
 
 export default Boards;

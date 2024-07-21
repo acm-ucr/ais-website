@@ -1,10 +1,14 @@
+import Boards from "@/components/board/Boards";
+import Interns from "@/components/board/Interns";
+
 import React from "react";
-import Board from "@/components/Board";
 
 const page = () => {
   return (
     <div>
-      <Board />
+      <Boards />
+
+      <Interns />
     </div>
   );
 };
