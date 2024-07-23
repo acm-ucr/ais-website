@@ -23,27 +23,15 @@ const Upcoming = () => {
   ];
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-around",
-        padding: "20px",
-      }}
-    >
+    <div className="flex justify-around p-5">
       {events.map((event) => (
         <div
           key={event.id}
-          style={{
-            width: "400px",
-            border: "1px solid black",
-            borderRadius: "10px",
-            padding: "10px",
-            textAlign: "center",
-          }}
+          className="w-96 border border-black rounded-lg p-5 text-center"
         >
-          <h3 style={{ color: "black", fontWeight: "bold" }}>{event.name}</h3>
-          <p style={{ color: "black" }}>{event.date}</p>
-          <p style={{ color: "black" }}>{event.location}</p>
+          <div className="text-black font-bold">{event.name}</div>
+          <div className="text-black">{event.date}</div>
+          <div className="text-black">{event.location}</div>
         </div>
       ))}
     </div>
