@@ -12,16 +12,16 @@ const Landing = () => {
       <Image
         src={wave1}
         alt="Wave 1"
-        className="object-cover w-full h-full absolute right-1/4 bottom-1/3 "
+        className="object-cover w-full h-full absolute right-[16%] bottom-[0%] rotate-180"
       />
 
       <Image
         src={wave2}
         alt="Wave 2"
-        className="object-cover w-full h-full absolute right-1/4 bottom-1/4 "
+        className="object-cover w-full h-full absolute right-[10%] bottom-[10%]"
       />
 
-      <div className="absolute flex flex-col bottom-[27%] right-[3%] items-center  text-white">
+      <div className="absolute flex flex-col bottom-[10%] right-[3%] items-center  text-white">
         <div className="flex flex-col items-start gap-5">
           <h1 className="text-4xl mb-4 ml-6">EMPOWERING FUTURE INNOVATORS</h1>
 
