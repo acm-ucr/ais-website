@@ -5,10 +5,10 @@ const Event = ({ name, date, location }) => {
   return (
     <div className="font-nunito border rounded-lg border-black shadow-sm shadow-black py-2.5">
       <div className="font-extrabold text-xl text-center pt-1 px-2">{name}</div>
-      <div className="cont-semibold text-base text-center pt-1 px-2">
+      <div className="font-semibold text-base text-center pt-1 px-2">
         {date} |{" "}
       </div>
-      <div className="cont-semibold text-base text-center pt-1 px-2">
+      <div className="font-semibold text-base text-center pt-1 px-2">
         {location}
       </div>
     </div>
