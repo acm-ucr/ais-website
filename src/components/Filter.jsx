@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Title from "./Title";
 
 const Filter = ({ filters, onChange, title }) => {
-  const [selectedFilter, setSelectedFilter] = useState("calendar");
+  const [selectedFilter, setSelectedFilter] = useState(filters[0]);
   const handleClick = (filter) => {
     setSelectedFilter(filter);
     onChange(filter);

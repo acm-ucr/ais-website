@@ -1,14 +1,13 @@
-import Boards from "@/components/board/Boards";
-import Interns from "@/components/board/Interns";
+import Wrapped from "@/components/board/WrappedBoard";
+import AboutLanding from "@/components/about/AboutLanding";
 
 import React from "react";
 
 const page = () => {
   return (
     <div>
-      <Boards />
-
-      <Interns />
+      <AboutLanding/>
+      <Wrapped/>
     </div>
   );
 };
