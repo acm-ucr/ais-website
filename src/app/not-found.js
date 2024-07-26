@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import wave1 from "@/public/wave1.svg";
-import wave2 from "@/public/wave2.svg";
 
 const NotFound = () => {
   return (
@@ -15,33 +14,18 @@ const NotFound = () => {
         </div>
         <Link
           href="/"
-          className="border-2 border-ais-blue-100 bg-white text-ais-blue-100 font-large px-9 py-2 rounded-full hover:bg-gray-200"
+          className="border-2 border-ais-blue-100 bg-white text-ais-blue-100 font-semibold text-2xl px-12 py-3 rounded-full hover:bg-gray-200"
         >
           BACK TO HOME
         </Link>
       </div>
 
       <div className="relative h-screen bg-gradient-to-b from-ais-blue-100 via-ais-blue-200 to-ais-blue-300">
-        <div className="absolute inset-0 z-0 overflow">
+        <div className="absolute inset-0 z-0 overflow-hidden">
           <Image
             src={wave1}
             alt="404 Wave 1"
-            layout="fill"
-            objectFit="cover"
-            className="opacity-50"
-            style={{
-              transform: "scale(1.5, 1.1)",
-              objectPosition: "top right",
-            }}
-          />
-
-          <Image
-            src={wave2}
-            alt="404 Wave 2"
-            layout="fill"
-            objectFit="cover"
-            className="opacity-90"
-            style={{ transform: "scale(1.9, 2.2)", objectPosition: " left" }}
+            className="w-full h-auto object-contain"
           />
         </div>
       </div>
