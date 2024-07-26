@@ -12,11 +12,7 @@ const Wrapped = () => {
   };
   return (
     <div>
-      <Filter
-        filters={BOARD}
-        onChange={handleFilterChange}
-        title={""}
-      />
+      <Filter filters={BOARD} onChange={handleFilterChange} title={""} />
       {component === "board" && <Boards />}
       {component === "interns" && <Interns />}
     </div>

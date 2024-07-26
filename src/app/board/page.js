@@ -6,8 +6,8 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <AboutLanding/>
-      <Wrapped/>
+      <AboutLanding />
+      <Wrapped />
     </div>
   );
 };
