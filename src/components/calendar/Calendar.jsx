@@ -78,7 +78,7 @@ const CalendarEvent = () => {
           <div className="flex justify-center h-[90vh] sm:h-60[vh] w-full font-nunito relative text-black font-bold">
             <Calendar
               date={date}
-              className="w-full m-0 p-0 text-md md:text-2xl flex justify-center remove-calendar-gridlines overflow-hidden"
+              className="w-full m-0 p-0 text-md md:text-2xl flex justify-center overflow-hidden"
               allDayAccessor="allDay"
               showAllEvents={true}
               events={events}
