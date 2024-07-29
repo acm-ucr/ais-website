@@ -5,7 +5,7 @@ import Title from "./Title";
 
 const About = () => {
   return (
-    <div className="bg-red-50 flex flex-col lg:flex-row mx-10 py-12 px-10 gap-10 justify-center font-nunito">
+    <div className="flex flex-col lg:flex-row mx-10 py-12 px-10 gap-10 justify-center font-nunito">
       <Image
         src={GroupPhoto}
         alt="AIS Group Photo"
