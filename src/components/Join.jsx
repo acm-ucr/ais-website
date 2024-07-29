@@ -27,14 +27,12 @@ const Join = () => {
           <div>etc etc</div>
         </div>
       </div>
-      <div className="relative w-7/12">
-        <Image
-          src={imagename}
-          fill={true}
-          className="block shadow-[17px_-17px_0px_0px_#dce6f9] rounded-2xl mr-[17px] object-cover h-auto"
-          alt="AIS team photo"
-        />
-      </div>
+
+      <Image
+        src={imagename}
+        className="w-5/12 shadow-[17px_-17px_0px_0px_#dce6f9] rounded-2xl mr-[17px] object-cover h-auto"
+        alt="AIS team photo"
+      />
     </div>
   );
 };
