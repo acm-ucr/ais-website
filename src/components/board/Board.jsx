@@ -3,19 +3,22 @@ import Cat from "@/public/cat_placeholder.svg";
 import Image from "next/image";
 import { IoMdMail } from "react-icons/io";
 import { FaLinkedinIn } from "react-icons/fa";
+import Card from "./BoardCard";
+import { VALUES } from "@/data/board";
 
 const Board = () => {
   return (
-    <div className="w-1/6 rounded-xl border border-black">
-      <Image src={Cat} alt="cat" />
-      <div className="flex flex-col items-center justify-center">
-        <div>Justin Lamy</div>
-        <div>President</div>
-      </div>
-      <div className="flex flex-row justify-center gap-2 mb-4">
-        <IoMdMail />
-        <FaLinkedinIn />
-      </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center gap-10">
+      {VALUES.map((item, index) => (
+        <Card
+          key={index}
+          image={item.img}
+          name={item.name}
+          position={item.pos}
+          email={item.email}
+          linkedin={item.linkedin}
+        />
+      ))}
     </div>
   );
 };
