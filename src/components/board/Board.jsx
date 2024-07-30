@@ -1,24 +1,34 @@
 import React from "react";
-import Cat from "@/public/cat_placeholder.svg";
 import Image from "next/image";
 import { IoMdMail } from "react-icons/io";
 import { FaLinkedinIn } from "react-icons/fa";
-import Card from "./BoardCard";
-import { VALUES } from "@/data/board";
+import Link from "next/link";
 
-const Board = () => {
+const Board = ({
+  image,
+  name,
+  position,
+  email,
+  linkedin,
+  target = "_blank",
+}) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center gap-10">
-      {VALUES.map((item, index) => (
-        <Card
-          key={index}
-          image={item.img}
-          name={item.name}
-          position={item.pos}
-          email={item.email}
-          linkedin={item.linkedin}
-        />
-      ))}
+    <div className="w-80  rounded-2xl border border-black flex flex-col items-center gap-2 text-ais-blue-100">
+      <Image
+        src={image}
+        className="rounded-2xl object-cover h-80 p-0.5"
+        alt={name}
+      />
+      <div className="font-bold text-2xl"> {name} </div>
+      <div className="font-semibold text-lg"> {position} </div>
+      <div className="flex justify-center gap-5 mb-3">
+        <Link href={`mailto:${email}`} target={target}>
+          <IoMdMail className="scale-150" />
+        </Link>
+        <Link href={linkedin} target={target}>
+          <FaLinkedinIn className="scale-150" />
+        </Link>
+      </div>
     </div>
   );
 };
