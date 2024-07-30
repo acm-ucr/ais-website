@@ -1,0 +1,49 @@
+.rbc-header {
+  padding: 0px;
+  border-bottom: none;
+}
+
+.rbc-header + .rbc-header {
+  border: none;
+}
+
+.rbc-month-view {
+  border: none;
+}
+
+.remove-calendar-gridlines .rbc-month-view .rbc-row-segment + .rbc-row-segment {
+  border: none !important;
+}
+
+.remove-calendar-gridlines .rbc-month-view .rbc-day-bg + .rbc-day-bg {
+  border: none !important;
+}
+
+.remove-calendar-gridlines .rbc-month-view .rbc-row + .rbc-row {
+  border: none !important;
+}
+
+.remove-calendar-gridlines .rbc-month-view .rbc-day-bg {
+  border: none !important;
+}
+
+.rbc-month-row {
+  border: none;
+}
+
+.rbc-row {
+  padding: 7px;
+  text-align: center;
+}
+
+.remove-border-bottom .rbc-date-cell {
+  border-bottom: none !important;
+}
+
+.rbc-date-cell {
+  text-align: center;
+}
+
+.rbc-row-segment {
+  max-height: 1vh;
+}
