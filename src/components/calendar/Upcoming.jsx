@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import moment from "moment";
 
 const Upcoming = () => {
@@ -11,11 +10,13 @@ const Upcoming = () => {
       const endDate = moment().add(10, "weeks").toISOString();
 
       try {
-        const response = await axios.get(
+        const response = await fetch(
           `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime&timeMin=${startDate}&timeMax=${endDate}&maxResults=10`
         );
 
-        const calendarEvents = response.data.items.map((event) => ({
+        const data = await response.json();
+
+        const calendarEvents = data.items.map((event) => ({
           id: event.id,
           name: event.summary,
           date: event.start.dateTime || event.start.date,
@@ -32,9 +33,9 @@ const Upcoming = () => {
     fetchEvents();
   }, []);
 
-  const upcomingEvents = events.filter(
-    (event) => new Date(event.date) >= new Date()
-  );
+  const upcomingEvents = events
+    .filter((event) => new Date(event.date) >= new Date())
+    .slice(0, 3);
 
   return (
     <div className="flex justify-around p-5">
