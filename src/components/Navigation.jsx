@@ -18,7 +18,7 @@ const Navigation = () => {
   return (
     <div className="absolute w-full flex justify-between items-start md:items-center text-2x1 px-1 z-20 md:px-5">
       <Link href="/" className="flex items-center pl-1 md:pl-20">
-        <Image alt="logo" src={logo} className="w-14 lg:w-36 md:h-auto" />
+        <Image alt="logo" src={logo} className="w-20 lg:w-36 md:h-auto" />
         <div className="flex-col text-white text-x1 md:text-2xl whitespace-nowrap">
           <item className="font-normal">ASSOCIATION FOR</item> <br />
           <item className="font-bold">INFORMATION SYSTEMS</item> <br />
