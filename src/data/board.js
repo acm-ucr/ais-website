@@ -1,15 +1,15 @@
 import fillerImage from "@/public/cat_placeholder.svg";
 
-import imagename1 from "@/public/board/JustinLamy.webp";
-import imagename2 from "@/public/board/AndrewNguyen.webp";
-import imagename3 from "@/public/board/NikhilNarasimhan.webp";
-import imagename4 from "@/public/board/NeftalyGalvan.webp";
-import imagename5 from "@/public/board/JonathanWei.webp";
-import imagename6 from "@/public/board/GarethCaothien.webp";
-import imagename7 from "@/public/board/AnnyPham.webp";
-import imagename8 from "@/public/board/OliviaNam.webp";
-import imagename9 from "@/public/board/RaymondRuiz.webp";
-// import imagename10 from "@/public/board/FranklinTieu.webp";
+import imagename1 from "@/public/board/JustinL.webp";
+import imagename2 from "@/public/board/AndrewN.webp";
+import imagename3 from "@/public/board/NikhilN.webp";
+import imagename4 from "@/public/board/NeftalyG.webp";
+import imagename5 from "@/public/board/JonathanW.webp";
+import imagename6 from "@/public/board/GarethC.webp";
+import imagename7 from "@/public/board/AnnyP.webp";
+import imagename8 from "@/public/board/OliviaN.webp";
+import imagename9 from "@/public/board/RaymondR.webp";
+// import imagename10 from "@/public/board/FranklinT.webp";
 
 export const VALUES = [
   // NOT INCLUDING Dr. Rich Yueh (rich.yueh@ucr.edu) - Faculty Advisor
