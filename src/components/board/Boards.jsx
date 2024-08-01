@@ -4,7 +4,7 @@ import { VALUES } from "@/data/board";
 const Boards = () => {
   return (
     <div className="flex flex-col gap-y-14">
-      <div className="flex justify-around">
+      <div className="flex flex-col md:flex-row items-center md:justify-around gap-14 md:gap-0">
         {VALUES.slice(0, 2).map((item, index) => (
           <Board
             image={item.img}
