@@ -84,3 +84,41 @@ export const VALUES = [
     linkedin: ".",
   },
 ];
+
+export const VARIABLES = [
+  {
+    name: "Chandrahaas Mariserla",
+    title: "Market Research Intern",
+    linkedin: ".",
+  },
+  {
+    name: "Sally Li",
+    title: "Finance Intern",
+    linkedin: ".",
+  },
+  {
+    name: "Evan Tran",
+    title: "Operations Intern",
+    linkedin: ".",
+  },
+  {
+    name: "Sumedha Chalasani",
+    title: "Operations Intern",
+    linkedin: ".",
+  },
+  {
+    name: "Javier Becerill",
+    title: "Communications Intern",
+    linkedin: ".",
+  },
+  {
+    name: "Roz Dastmalchi",
+    title: "Marketing Intern",
+    linkedin: ".",
+  },
+  {
+    name: "Melissa Ortiz",
+    title: "Marketing Intern",
+    linkedin: ".",
+  },
+];
