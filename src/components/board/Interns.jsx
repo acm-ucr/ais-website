@@ -1,10 +1,20 @@
 import React from "react";
 import Intern from "./Intern";
+import { VARIABLES } from "@/data/board";
 
 const Interns = () => {
   return (
-    <div>
-      <Intern />
+    <div className="flex flex-col gap-y-14">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center gap-y-14">
+        {VARIABLES.map((intern, index) => (
+          <Intern
+            key={index}
+            name={intern.name}
+            title={intern.title}
+            linkedin={intern.linkedin}
+          />
+        ))}
+      </div>
     </div>
   );
 };

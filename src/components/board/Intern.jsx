@@ -1,17 +1,16 @@
 import React from "react";
-import { IoMdMail } from "react-icons/io";
 import { FaLinkedinIn } from "react-icons/fa";
+import Link from "next/link";
 
-const Intern = () => {
+const Intern = ({ name, title, linkedin, target = "_blank" }) => {
   return (
-    <div className="w-1/6 rounded-xl border border-black">
-      <div className="flex flex-col items-center justify-center">
-        <div>Justin Lamy</div>
-        <div>President</div>
-      </div>
-      <div className="flex flex-row justify-center gap-2 mb-4">
-        <IoMdMail />
-        <FaLinkedinIn />
+    <div className="w-80 rounded-2xl border border-black flex flex-col items-center gap-2 text-ais-blue-100">
+      <div className="font-bold text-2xl"> {name}</div>
+      <div className="font-semibold text-lg">{title}</div>
+      <div className="flex justify-center gap-5 mb-3">
+        <Link href={linkedin} target={target}>
+          <FaLinkedinIn className="scale-150" />
+        </Link>
       </div>
     </div>
   );

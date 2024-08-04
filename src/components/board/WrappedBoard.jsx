@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Boards from "./Boards";
-import Interns from "./Intern";
+import Interns from "./Interns";
 import Filter from "../Filter";
 import { BOARD } from "@/data/filters";
 
