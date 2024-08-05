@@ -14,7 +14,6 @@ const Wrapped = () => {
   return (
     <div>
       <Filter
-        className="ml-36"
         filters={EVENTS}
         onChange={handleFilterChange}
         title={"EVENT OVERVIEW"}
