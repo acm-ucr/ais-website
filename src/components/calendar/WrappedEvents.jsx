@@ -12,8 +12,9 @@ const Wrapped = () => {
     setComponent(component);
   };
   return (
-    <div className="ml-36">
+    <div>
       <Filter
+        className="ml-36"
         filters={EVENTS}
         onChange={handleFilterChange}
         title={"EVENT OVERVIEW"}
