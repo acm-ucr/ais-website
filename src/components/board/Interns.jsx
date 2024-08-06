@@ -6,7 +6,17 @@ const Interns = () => {
   return (
     <div className="flex flex-col gap-y-14">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center gap-y-14">
-        {VARIABLES.map((intern, index) => (
+        {VARIABLES.slice(0, 6).map((intern, index) => (
+          <Intern
+            key={index}
+            name={intern.name}
+            title={intern.title}
+            linkedin={intern.linkedin}
+          />
+        ))}
+      </div>
+      <div className="flex justify-center">
+        {VARIABLES.slice(6).map((intern, index) => (
           <Intern
             key={index}
             name={intern.name}

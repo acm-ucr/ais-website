@@ -9,7 +9,7 @@ const Filter = ({ filters, onChange, title, className }) => {
     onChange(filter);
   };
   return (
-    <div className="ml-36">
+    <div className="m-0 md:ml-6">
       <Title title={title} />
       <div className="flex space-x-4 mb-5 mt-4">
         {filters.map((filter) => (
