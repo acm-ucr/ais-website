@@ -2,14 +2,14 @@
 import React, { useState } from "react";
 import Title from "./Title";
 
-const Filter = ({ filters, onChange, title }) => {
+const Filter = ({ filters, onChange, title, className }) => {
   const [selectedFilter, setSelectedFilter] = useState(filters[0]);
   const handleClick = (filter) => {
     setSelectedFilter(filter);
     onChange(filter);
   };
   return (
-    <div className="">
+    <div className="ml-36">
       <Title title={title} />
       <div className="flex space-x-4 mb-5 mt-4">
         {filters.map((filter) => (
