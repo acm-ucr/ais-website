@@ -1,27 +1,27 @@
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const CustomToolbar = ({ onNavigate, date }) => {
   return (
-    <div className="flex justify-center items-center w-full py-3 flex-row">
-      <div className="flex items-center justify-center p-1 rounded-full shadow-md mr-2">
-        <AiOutlineArrowLeft
-          onClick={() => {
-            onNavigate("PREV");
-          }}
-          className="hover:cursor-pointer text-saf-brown text-4xl text-gray-500 md:max-w-12 max-w-4"
-        />
-      </div>
-
-      <p className="m-0 bg-clip-text md:text-4xl text-lg px-3">
-        {date.toLocaleString("default", { month: "short" })}{" "}
-        {date.getFullYear()}
-      </p>
-
-      <div className="flex items-center justify-center p-1 rounded-full shadow-md mr-2">
-        <AiOutlineArrowRight
-          onClick={() => onNavigate("NEXT")}
-          className="hover:cursor-pointer text-saf-brown text-4xl text-gray-500 md:max-w-12 max-w-4"
-        />
+    <div className="flex justify-center">
+      <div className="absolute z-50 bg-white w-2/3 md:w-1/3 m-auto border-[6.5px] rounded-full md:py-[1px] -translate-y-11 overflow-visible">
+        <div className="py-.5 ring-ais-blue-100 ring-4 ring-offset-[0.5px] rounded-full flex justify-center items-center md:flex-row">
+          <IoIosArrowBack
+            onClick={() => {
+              onNavigate("PREV");
+            }}
+            className="hover:cursor-pointer text-3xl"
+          />
+          <div>
+            <p className="m-0 text-xl md:text-3xl font-nunito font-bold ">
+              {date.toLocaleString("default", { month: "short" })}{" "}
+              {date.getFullYear()}
+            </p>
+          </div>
+          <IoIosArrowForward
+            onClick={() => onNavigate("NEXT")}
+            className="hover:cursor-pointer text-3xl"
+          />
+        </div>
       </div>
     </div>
   );
