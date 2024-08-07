@@ -5,7 +5,7 @@ import Title from "./Title";
 
 const Join = () => {
   return (
-    <div className="flex mx-28 my-12 gap-3 justify-center font-nunito">
+    <div className="flex flex-col-reverse lg:flex-row mx-28 my-12 gap-3 justify-center font-nunito">
       <div className="flex flex-col justify-center space-y-6 mr-12 w-2/3 py-5">
         <div className="flex justify-end text-right">
           <Title title={"WHY JOIN"} />
@@ -30,7 +30,7 @@ const Join = () => {
 
       <Image
         src={imagename}
-        className="w-5/12 shadow-[17px_-17px_0px_0px_#dce6f9] rounded-2xl mr-[17px] object-cover h-auto"
+        className="w-2/3 lg:w-5/12 shadow-[17px_-17px_0px_0px_#dce6f9] rounded-2xl mr-[17px] object-cover h-auto"
         alt="AIS team photo"
       />
     </div>
