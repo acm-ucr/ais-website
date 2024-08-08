@@ -1,7 +1,7 @@
 import AboutLanding from "@/components//about/AboutLanding";
-import About from "@/components/About";
-import Join from "@/components/Join";
-import Values from "@/components/Values";
+import About from "@/components/about/About";
+import Join from "@/components/about/Join";
+import Values from "@/components/about/Values";
 
 const page = () => {
   return (
