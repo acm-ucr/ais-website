@@ -3,8 +3,8 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 const CustomToolbar = ({ onNavigate, date }) => {
   return (
     <div className="flex justify-center">
-      <div className="absolute z-50 bg-white w-2/3 md:w-1/3 m-auto border-[6.5px] rounded-full md:py-[1px] -translate-y-11 overflow-visible">
-        <div className="py-.5 ring-ais-blue-100 ring-4 ring-offset-[0.5px] rounded-full flex justify-center items-center md:flex-row">
+      <div className="absolute z-50 bg-white w-2/3 md:w-1/3 m-auto border rounded-full md:py-1 -translate-y-20 overflow-visible">
+        <div className="py-2 ring-ais-blue-100 ring-2 ring-offset-[0.5px] rounded-full flex justify-center items-center md:flex-row">
           <IoIosArrowBack
             onClick={() => {
               onNavigate("PREV");
