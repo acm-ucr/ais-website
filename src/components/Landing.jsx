@@ -21,8 +21,8 @@ const Landing = () => {
         className="object-cover w-full h-full absolute right-[10%] bottom-[20%] rotate-12 scale-125"
       />
 
-      <div className="absolute inset-0 flex flex-col justify-end items-center md:items-end md:pb-[6%] md:pr-[5%] text-white p-4">
-        <div className="flex flex-col items-center md:items-start gap-3 max-w-xl w-full whitespace-nowrap">
+      <div className="absolute inset-0 lg:-inset-7 lg:right-8 flex flex-col justify-end items-center md:items-end md:pb-[6%] md:pr-[5%] text-white p-4">
+        <div className="flex flex-col items-center md:items-start gap-3 max-w-xl w-full whitespace-normal lg:whitespace-nowrap">
           <h1 className="text-xl md:text-4xl text-center md:text-left md:ml-[-98px] lg:ml-[-15px] xl:ml-4 mb-4 z-10">
             EMPOWERING FUTURE INNOVATORS
           </h1>
@@ -33,7 +33,7 @@ const Landing = () => {
               alt="AIS Logo"
               className="scale-125 md:scale-150 mb-4 md:mb-0"
             />
-            <div className="flex flex-col items-center md:items-start m-4 md:m-8 text-xl md:text-3xl gap-1">
+            <div className="flex flex-col items-center md:items-start m-4 md:m-6 text-xl md:text-3xl gap-1">
               <h2 className="font-light">ASSOCIATION FOR</h2>
               <h3 className="font-semibold">INFORMATION SYSTEMS</h3>
               <h4>AT UCR</h4>
