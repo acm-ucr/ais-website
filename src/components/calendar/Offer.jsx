@@ -5,9 +5,9 @@ import { VALUES } from "@/data/offer";
 
 const Offer = () => {
   return (
-    <div className="flex flex-col my-3 gap-5 justify-center font-nunito items-center">
+    <div className="flex flex-col my-10 gap-5 justify-center font-nunito items-center">
       <Title title={"WHAT WE OFFER"} />
-      <div className="flex justify-center gap-5 w-full items-start">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-5 w-full lg:items-start md:text-base text-sm">
         {VALUES.map((item, index) => (
           <Card
             image={item.img}
