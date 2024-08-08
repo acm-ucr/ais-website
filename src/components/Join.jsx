@@ -10,7 +10,7 @@ const Join = () => {
         <div className="flex justify-center lg:justify-end text-center lg:text-right">
           <Title title={"WHY JOIN"} />
         </div>
-        <div className="text-center lg:text-right text-base md:text-lg my-4">
+        <div className="text-left lg:text-right text-base md:text-lg my-4">
           suspendisse ultrices gravida dictum fusce ut placerat orci nulla
           pellentesque dignissim enim sit amet venenatis urna cursus eget nunc
           scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt
