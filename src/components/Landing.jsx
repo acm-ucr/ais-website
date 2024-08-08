@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import wave1 from "@/public/wave1.svg";
+import wave from "@/public/wave.svg";
 import wave2 from "@/public/wave2.svg";
 import AIS from "@/public/AIS.svg";
 import Button from "./Button";
@@ -10,20 +10,20 @@ const Landing = () => {
   return (
     <div className="relative h-screen bg-gradient-to-b from-ais-blue-100 via-ais-blue-200 to-ais-blue-300 overflow-hidden">
       <Image
-        src={wave1}
+        src={wave}
         alt="Wave 1"
-        className="object-cover w-full h-full absolute right-[16%] bottom-[0%] rotate-180"
+        className="object-cover w-full h-full absolute right-[0%] bottom-[0%] rotate-100"
       />
 
       <Image
         src={wave2}
         alt="Wave 2"
-        className="object-cover w-full h-full absolute right-[10%] bottom-[10%]"
+        className="object-cover w-full h-full absolute right-[10%] bottom-[20%] rotate-12 scale-125"
       />
 
-      <div className="absolute flex flex-col bottom-[10%] right-[3%] items-center  text-white">
-        <div className="flex flex-col items-start gap-5">
-          <h1 className="text-4xl mb-4 ml-6">EMPOWERING FUTURE INNOVATORS</h1>
+      <div className="absolute flex flex-col bottom-[6%] right-[3%] items-center  text-white">
+        <div className="flex flex-col items-start gap-3">
+          <h1 className="text-4xl  ml-6">EMPOWERING FUTURE INNOVATORS</h1>
 
           <div className="flex justify-start">
             <Image src={AIS} alt="AIS Logo" className="scale-150" />
@@ -33,7 +33,7 @@ const Landing = () => {
               <h4>AT UCR</h4>
             </div>
           </div>
-          <div className="flex mt-6 gap-6 ml-8">
+          <div className="flex mt-4 gap-6 ml-8">
             <Button
               text={"JOIN US"}
               link={"https://youtu.be/ze-POGS94-k?si=GTi-7sfaI0m1z_YT"}
