@@ -23,7 +23,7 @@ const Landing = () => {
 
       <div className="absolute inset-0 flex flex-col justify-end items-center md:items-end md:pb-[6%] md:pr-[5%] text-white p-4">
         <div className="flex flex-col items-center md:items-start gap-3 max-w-xl w-full whitespace-nowrap">
-          <h1 className="text-xl md:text-4xl text-center md:text-left md:ml-[-80px] lg:ml-[-15px] xl:ml-4 mb-4 z-10">
+          <h1 className="text-xl md:text-4xl text-center md:text-left md:ml-[-98px] lg:ml-[-15px] xl:ml-4 mb-4 z-10">
             EMPOWERING FUTURE INNOVATORS
           </h1>
 
