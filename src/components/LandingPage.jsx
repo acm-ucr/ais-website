@@ -1,9 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import aboutLanding from "@/public/aboutLanding.svg";
-// import { useState } from "react";
+// import Wave from "@/public/wave.svg";
+// import Wave1 from "@/public/wave1.svg";
+// import Wave2 from "@/public/wave2.svg";
+// import conditional from "@/components/conditional.tsx"
 
-const AboutLanding = ({ header }) => {
+const LandingPage = ({ header }) => {
   return (
     <div className="relative">
       <div className="absolute inset-0 z-10 flex items-center justify-center text-4xl font-bold text-white">
@@ -18,4 +21,4 @@ const AboutLanding = ({ header }) => {
   );
 };
 
-export default AboutLanding;
+export default LandingPage;
