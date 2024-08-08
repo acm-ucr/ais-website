@@ -4,7 +4,7 @@ import Link from "next/link";
 const Button = ({ text, link, target }) => {
   return (
     <button
-      className={`rounded-full text-2xl font-plain text-center inline-block
+      className={`rounded-full text-2xl font-plain text-center inline-block duration-300
       ${
         text === "JOIN US"
           ? "border-2 border-white bg-transparent text-white py-2 px-8 hover:bg-white hover:text-ais-blue-100"
