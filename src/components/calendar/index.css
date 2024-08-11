@@ -1,0 +1,20 @@
+.rbc-header + .rbc-header {
+  border-left: 2px solid;
+  border-color: #051d40;
+}
+
+.rbc-day-bg {
+  border: 3px solid #051d40;
+  border-top: 3px #051d40;
+  background-color: white !important;
+}
+
+.rbc-calendar {
+  border-radius: 12px;
+  box-shadow: 10px 0 15px -5px rgba(117, 13, 86, 0.1);
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
