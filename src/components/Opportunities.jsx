@@ -45,18 +45,12 @@ const Opportunities = () => {
               className="flex text-xl text-center rounded-xl gap-y-10 my-0.5 w-full text-ais-blue-200"
               key={index}
             >
-              <p className="bg-red-50 w-2/3 hover:opacity-80 h-full py-2">
+              <p className="bg-red-50 w-2/3 h-full py-2">
                 {row.column1 || "N/A"}
               </p>
-              <p className="bg-green-50 w-2/3 hover:opacity-80 py-2">
-                {row.column2 || "N/A"}
-              </p>
-              <p className="bg-red-50 w-2/3 hover:opacity-80 py-2">
-                {row.column3 || "N/A"}
-              </p>
-              <p className="bg-green-50 w-2/3 hover:opacity-80 py-2">
-                {row.column4 || "N/A"}
-              </p>
+              <p className="bg-green-50 w-2/3 py-2">{row.column2 || "N/A"}</p>
+              <p className="bg-red-50 w-2/3 py-2">{row.column3 || "N/A"}</p>
+              <p className="bg-green-50 w-2/3 py-2">{row.column4 || "N/A"}</p>
               <Link
                 href={row.column5}
                 className="bg-red-50 w-full hover:text-ais-blue-300/70 py-2"
