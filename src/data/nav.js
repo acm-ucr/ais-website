@@ -21,6 +21,6 @@ export const items = [
   },
   {
     name: "JOIN US",
-    link: "/join",
+    link: "https://www.youtube.com/watch?v=USKD3vPD6ZA&t=74s",
   },
 ];

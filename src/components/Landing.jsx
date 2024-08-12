@@ -21,25 +21,36 @@ const Landing = () => {
         className="object-cover w-full h-full absolute right-[10%] bottom-[20%] rotate-12 scale-125"
       />
 
-      <div className="absolute flex flex-col bottom-[6%] right-[3%] items-center  text-white">
-        <div className="flex flex-col items-start gap-3">
-          <h1 className="text-4xl  ml-6">EMPOWERING FUTURE INNOVATORS</h1>
+      <div className="absolute inset-0 lg:-inset-7 lg:right-8 flex flex-col justify-end items-center md:items-end md:pb-[6%] md:pr-[5%] text-white p-4">
+        <div className="flex flex-col items-center md:items-start gap-3 max-w-xl w-full whitespace-normal lg:whitespace-nowrap">
+          <h1 className="text-xl md:text-4xl text-center md:text-left md:ml-[-98px] lg:ml-[-15px] xl:ml-4 mb-4 z-10">
+            EMPOWERING FUTURE INNOVATORS
+          </h1>
 
-          <div className="flex justify-start">
-            <Image src={AIS} alt="AIS Logo" className="scale-150" />
-            <div className="flex flex-col m-8 text-3xl gap-1">
+          <div className="flex flex-col md:flex-row items-center md:items-start z-10">
+            <Image
+              src={AIS}
+              alt="AIS Logo"
+              className="scale-125 md:scale-150 mb-4 md:mb-0"
+            />
+            <div className="flex flex-col items-center md:items-start m-4 md:m-6 text-xl md:text-3xl gap-1">
               <h2 className="font-light">ASSOCIATION FOR</h2>
               <h3 className="font-semibold">INFORMATION SYSTEMS</h3>
               <h4>AT UCR</h4>
             </div>
           </div>
-          <div className="flex mt-4 gap-6 ml-8">
+
+          <div className="flex mt-4 gap-4 md:gap-6 md:ml-8 z-10">
             <Button
               text={"JOIN US"}
               link={"https://youtu.be/ze-POGS94-k?si=GTi-7sfaI0m1z_YT"}
               target={"_blank"}
             />
-            <Button text={"LEARN MORE"} link={"about"} target={null} />
+            <Button
+              text={"LEARN MORE"}
+              link={"https://www.youtube.com/watch?v=hJsE-9uu3bU"}
+              target={null}
+            />
           </div>
         </div>
       </div>
