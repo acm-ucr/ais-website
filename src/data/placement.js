@@ -7,10 +7,10 @@ import Aloha from "@/public/placements/Aloha.svg";
 
 import about1 from "@/public/AIS_About_GroupPhoto.webp";
 import join1 from "@/public/whyJoin.webp";
-import about2 from "@/public/about2.png";
-import about3 from "@/public/about3.png";
-import join2 from "@/public/join2.png";
-import join3 from "@/public/join3.png";
+import about2 from "@/public/about2.webp";
+import about3 from "@/public/about3.webp";
+import join2 from "@/public/join2.webp";
+import join3 from "@/public/join3.webp";
 
 export const Placements = [
   {
