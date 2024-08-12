@@ -6,14 +6,14 @@ import Image from "next/image";
 const Carousel = ({ images, shadow, init, exit }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
   useEffect(() => {
+    const nextImage = () => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    };
+
     const interval = setInterval(nextImage, 10000);
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   return (
     <AnimatePresence>
