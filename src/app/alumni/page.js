@@ -1,6 +1,6 @@
 import AboutLanding from "@/components//about/AboutLanding";
 
-const AlumniPage = () => {
+const page = () => {
   return (
     <div>
       <AboutLanding header={"OUR ALUMNI"} />
@@ -8,4 +8,4 @@ const AlumniPage = () => {
   );
 };
 
-export default AlumniPage;
+export default page;
