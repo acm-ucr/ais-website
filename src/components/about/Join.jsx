@@ -1,13 +1,13 @@
 import React from "react";
-import Image from "next/image";
-import imagename from "@/public/whyJoin.webp";
 import Title from "../Title";
+import Carousel from "./Carousel";
+import { JOIN } from "@/data/placement";
 
 const Join = () => {
   return (
     <div className="flex flex-col-reverse lg:flex-row mx-4 md:mx-16 lg:mx-28 my-12 gap-3 justify-center font-nunito">
       <div className="flex flex-col justify-center space-y-6 lg:mr-12 w-full lg:w-2/3 py-5">
-        <div className="flex justify-center lg:justify-end text-center lg:text-right">
+        <div className="flex justify-center lg:justify-end text-center lg:text-right mt-20 lg:mt-0">
           <Title title={"WHY JOIN"} />
         </div>
         <div className="text-left lg:text-right text-base md:text-lg my-4">
@@ -28,12 +28,18 @@ const Join = () => {
         </div>
       </div>
 
-      <div className="w-full lg:w-5/12 flex justify-center lg:justify-end">
-        <Image
+      <div className="w-full lg:w-5/12 flex justify-center lg:justify-end relative h-60 md:h-96 lg:h-0 ">
+        <Carousel
+          images={JOIN}
+          shadow={"shadow-[17px_-17px_0px_0px_#dce6f9]"}
+          init={"50%"}
+          exit={"-10%"}
+        />
+        {/* <Image
           src={imagename}
           className="shadow-[17px_-17px_0px_0px_#dce6f9] rounded-2xl mr-[17px] object-cover h-auto max-w-full"
           alt="AIS team photo"
-        />
+        /> */}
       </div>
     </div>
   );
