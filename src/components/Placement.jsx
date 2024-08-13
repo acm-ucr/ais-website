@@ -15,14 +15,14 @@ const Placement = () => {
         Check out where we work
       </div>
 
-      <div className="grid grid-cols-3 w-9/12 items-center justify-center gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 w-full md:w-9/12 items-center justify-center gap-4">
         {Placements.map((item, index) => (
           <div
             key={index}
             className="flex justify-center items-center overflow-hidden mb-10"
           >
             <Image
-              className="size-3/4 rounded-xl"
+              className="size-3/4 md:size-full lg:size-3/4 rounded-xl"
               src={item.image}
               alt="Company"
             />
