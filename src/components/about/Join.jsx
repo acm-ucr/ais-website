@@ -11,14 +11,15 @@ const Join = () => {
           <Title title={"WHY JOIN"} />
         </div>
         <div className="text-left lg:text-right text-base md:text-lg my-4">
-          suspendisse ultrices gravida dictum fusce ut placerat orci nulla
-          pellentesque dignissim enim sit amet venenatis urna cursus eget nunc
-          scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt
-          augue interdum velit euismod in pellentesque massa placerat duis
-          ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante
-          metus dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu
-          non odio euismod risus feugiat in ante metus dictum at tempor commodo
-          ullamcorper a lacus vestibulum sed arcu non odio euismod sed
+          Joining the Association for Information Systems at UC Riverside
+          provides a unique opportunity to develop both technical and
+          professional skills essential for success. Through our workshops and
+          certifications, you'll gain hands-on experience with the latest tools
+          and technologies used in the tech industry. Our real-world projects
+          enable you to apply classroom knowledge to practical scenarios and
+          develop problem-solving skills in a professional setting. Network with
+          industry professionals, alumni, and peer at our events to build
+          valuable connections for career guidance and opportunities.
         </div>
         <div className="flex font-semibold gap-4 md:gap-8 justify-between text-base md:text-2xl">
           <div>100+ members</div>
