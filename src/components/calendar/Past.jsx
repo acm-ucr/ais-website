@@ -75,7 +75,7 @@ const Past = () => {
 
   useEffect(() => {
     fetch(
-      "https://www.googleapis.com/calendar/v3/calendars/jonathan.trujillo0432@gmail.com/events?key=AIzaSyDjMfOhKeS4EwrdI3muVh6tB_GiJTj1sAA"
+      `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -90,7 +90,6 @@ const Past = () => {
     return <p>No data</p>;
   }
   if (data) {
-    console.log("This is data: ", data.items);
     filteredDates = data.items.filter((item, index) => pastFilter(item));
   }
 
