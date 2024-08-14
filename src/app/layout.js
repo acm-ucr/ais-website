@@ -1,7 +1,7 @@
 /* eslint-disable new-cap */
 import "./globals.css";
 import { Nunito } from "next/font/google";
-import Navigation from "@/components/Navigation";
+import Navigation from "src/components/Placement.jsx";
 import Footer from "@/components/Footer";
 
 const nunito = Nunito({
