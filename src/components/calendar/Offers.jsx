@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const OfferCard = ({ image, title, text }) => {
+const Offers = ({ image, title, text }) => {
   return (
     <div
       className={`flex flex-col items-center w-80 h-auto mx-5 p-2 gap-3 rounded-2xl text-ais-blue-100 font-nunito`}
@@ -21,4 +21,4 @@ const OfferCard = ({ image, title, text }) => {
   );
 };
 
-export default OfferCard;
+export default Offers;
