@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="bg-[#002855] text-white py-10">
       <div className="flex items-center justify-center">
-        <image src="/AIS.svg" alt="AIS Logo" className="w-28 mr-0" />
+        <img src="/AIS.svg" alt="AIS Logo" className="w-28 mr-0" />
         <div className="text-xl">
           Association for <br />
           <span className="font-bold">Information Systems</span> <br />
