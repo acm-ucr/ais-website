@@ -1,16 +1,14 @@
 import { FaInstagram, FaEnvelope, FaLinkedin, FaSlack } from "react-icons/fa";
 
-export const icons = [
+export const ICONS = [
   {
-    name: "Instagram",
-    icon: FaInstagram,
-    link: "https://instagram.com/yourprofile",
+    icon: <FaInstagram />,
+    link: "https://www.instagram.com/aisatucr/",
   },
-  { name: "Email", icon: FaEnvelope, link: "mailto:aisatucr@gmail.com" },
+  { icon: <FaEnvelope />, link: "mailto:aisatucr@gmail.com" },
   {
-    name: "LinkedIn",
-    icon: FaLinkedin,
-    link: "https://linkedin.com/in/yourprofile",
+    icon: <FaLinkedin />,
+    link: "https://www.linkedin.com/company/aisatucr/",
   },
-  { name: "Slack", icon: FaSlack, link: "https://slack.com/yourworkspace" },
+  { icon: <FaSlack />, link: "https://slack.com/yourworkspace" },
 ];
