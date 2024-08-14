@@ -46,7 +46,7 @@ const Past = () => {
   const past = data.filter((e) => e.start <= new Date());
 
   return (
-    <div className="flex justify-center w-full font-nunito text-xl font-extrabold">
+    <div className="flex justify-center w-full font-nunito text-xl font-extrabold my-10">
       <div className="grid justify-center gap-10 grid-cols-3 w-8/12">
         {past.slice(-6).map((item, index) => (
           <Event
