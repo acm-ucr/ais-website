@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../Title";
-import Card from "./OfferCard";
+import Offers from "./Offers";
 import { VALUES } from "@/data/offer";
 
 const Offer = () => {
@@ -9,7 +9,7 @@ const Offer = () => {
       <Title title={"WHAT WE OFFER"} />
       <div className="flex flex-col lg:flex-row items-center justify-center gap-5 w-full lg:items-start md:text-base text-sm">
         {VALUES.map((item, index) => (
-          <Card
+          <Offers
             image={item.img}
             title={item.title}
             text={item.text}
