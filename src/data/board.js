@@ -122,3 +122,60 @@ export const VARIABLES = [
     linkedin: ".",
   },
 ];
+
+export const CHARACTERISTICS = [
+  {
+    image: "",
+    name: "Isabelle Sam",
+    position: "Business Analyst at Sony Pictures Entertainment",
+    linkedin: "https://www.linkedin.com/in/isabellesam/",
+  },
+  {
+    image: "",
+    name: "Sachi Rajguroo",
+    position: "Technology Risk Consultant at EY",
+    linkedin: "https://www.linkedin.com/in/sachi-rajguroo/",
+  },
+  {
+    image: "",
+    name: "Andrew Del Real",
+    position: "Investment Analyst at Hodson P.I.",
+    linkedin: "https://www.linkedin.com/in/andrew-del-real/",
+  },
+  {
+    image: "",
+    name: "Hitansi Amin",
+    position: "Business Analyst at Sileo Technology Solutions",
+    linkedin: "https://www.linkedin.com/in/hitansi-amin/",
+  },
+  {
+    image: "",
+    name: "Nathan Eng",
+    position: "Information Security Analyst at Aloha Pacific",
+    linkedin: "https://www.linkedin.com/in/nathan-eng1/",
+  },
+  {
+    image: "",
+    name: "Tiffany Ton",
+    position: "Legal Data Analyst at Dolby Laboratories",
+    linkedin: "https://www.linkedin.com/in/tiffanyhton/",
+  },
+  {
+    image: "",
+    name: "Hannah Dembla",
+    position: "Marketing Specialist at Abbott",
+    linkedin: "https://www.linkedin.com/in/debbiepang01/",
+  },
+  {
+    image: "",
+    name: "Debbie Pang",
+    position: "Intern at David Taussing & Associates, Inc.",
+    linkedin: "",
+  },
+  {
+    image: "",
+    name: "Ashley Alvarez",
+    position: "Analyst at Westlake Financial",
+    linkedin: "https://www.linkedin.com/in/ashleyalvz/",
+  },
+];

@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Boards from "./Boards";
 import Interns from "./Interns";
+import Alumnis from "./Alumnis";
 import Filter from "../Filter";
 import { BOARD } from "@/data/filters";
 
@@ -15,6 +16,7 @@ const Wrapped = () => {
       <Filter filters={BOARD} onChange={handleFilterChange} title={""} />
       {component === "board" && <Boards />}
       {component === "interns" && <Interns />}
+      {component === "alumni" && <Alumnis />}
     </div>
   );
 };
