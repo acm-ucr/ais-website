@@ -11,6 +11,7 @@ const Alumni = ({ image, name, position, linkedin, target = "_blank" }) => {
         className="rounded-2xl object-cover h-80 p-0.5"
         alt={name}
       />
+
       <div className="font-bold text-2xl"> {name} </div>
       <div className="font-semibold text-lg"> {position} </div>
       <div className="flex justify-center gap-5 mt-auto mb-3">
