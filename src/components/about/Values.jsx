@@ -1,7 +1,7 @@
 import React from "react";
 import Value from "./Value";
 import Title from "../Title";
-import { VALUES } from "@/data/cards";
+import { VALUES } from "@/data/values";
 
 const Values = () => {
   return (
