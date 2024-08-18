@@ -43,7 +43,7 @@ const Opportunities = () => {
         <>
           {/* desktop view */}
           <div className="hidden md:flex flex-col items-center justify-center w-5/6 border-4 border-ais-blue-200 rounded-lg bg-ais-blue-300">
-            <div className="flex text-xl font-bold text-center rounded-xl gap-y-10 my-0.5 w-full bg-ais-blue-500 text-white ">
+            <div className="flex text-xl font-bold text-center rounded-xl gap-y-10 my-0.5 w-full bg-ais-blue-200 text-white ">
               {headers.map((header, index) => (
                 <p key={index} className={`w-full py-2`}>
                   {data[0][header]}
