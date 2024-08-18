@@ -15,13 +15,12 @@ const Opportunities = () => {
       )
         .then((response) => response.json())
         .then((data) => {
-          console.log(data);
           const items = data.values.map((row) => ({
-            column1: row[0] || "",
-            column2: row[1] || "",
-            column3: row[2] || "",
-            column4: row[3] || "",
-            column5: row[4] || "",
+            column1: row[0],
+            column2: row[1],
+            column3: row[2],
+            column4: row[3],
+            column5: row[4],
           }));
 
           setData(items);
@@ -39,7 +38,7 @@ const Opportunities = () => {
   return (
     <div className="w-full flex justify-center items-center flex-col font-nunito gap-4 my-10">
       <Title title={"Opportunities"} />
-      {data ? (
+      {data.length > 0 ? (
         <>
           {/* desktop view */}
           <div className="hidden md:flex flex-col items-center justify-center w-5/6 border-4 border-ais-blue-200 rounded-lg bg-ais-blue-300">
