@@ -9,6 +9,7 @@ const Alumnis = () => {
         {CHARACTERISTICS.slice(0, 9).map((alumni, index) => (
           <Alumni
             key={index}
+            image={alumni.image}
             name={alumni.name}
             position={alumni.position}
             linkedin={alumni.linkedin}
@@ -19,6 +20,7 @@ const Alumnis = () => {
         {CHARACTERISTICS.slice(9).map((alumni, index) => (
           <Alumni
             key={index}
+            image={alumni.image}
             name={alumni.name}
             title={alumni.position}
             linkedin={alumni.linkedin}

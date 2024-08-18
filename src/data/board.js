@@ -11,6 +11,15 @@ import imagename8 from "@/public/board/OliviaN.webp";
 import imagename9 from "@/public/board/RaymondR.webp";
 // import imagename10 from "@/public/board/FranklinT.webp";
 
+import imgAndrew from "@/public/alumni/AndrewD.webp";
+import imgAshley from "@/public/alumni/AshleyA.webp";
+import imgDebbie from "@/public/alumni/DebbieP.webp";
+import imgHitansi from "@/public/alumni/HitansiA.webp";
+import imgIsabelle from "@/public/alumni/IsabelleS.webp";
+import imgNathan from "@/public/alumni/NathanE.webp";
+import imgSachi from "@/public/alumni/SachiR.webp";
+import imgTiffany from "@/public/alumni/TiffanyT.webp";
+
 export const VALUES = [
   // NOT INCLUDING Dr. Rich Yueh (rich.yueh@ucr.edu) - Faculty Advisor
   {
@@ -125,37 +134,37 @@ export const VARIABLES = [
 
 export const CHARACTERISTICS = [
   {
-    image: "",
+    image: imgIsabelle,
     name: "Isabelle Sam",
     position: "Business Analyst at Sony Pictures Entertainment",
     linkedin: "https://www.linkedin.com/in/isabellesam/",
   },
   {
-    image: "",
+    image: imgSachi,
     name: "Sachi Rajguroo",
     position: "Technology Risk Consultant at EY",
     linkedin: "https://www.linkedin.com/in/sachi-rajguroo/",
   },
   {
-    image: "",
+    image: imgAndrew,
     name: "Andrew Del Real",
     position: "Investment Analyst at Hodson P.I.",
     linkedin: "https://www.linkedin.com/in/andrew-del-real/",
   },
   {
-    image: "",
+    image: imgHitansi,
     name: "Hitansi Amin",
     position: "Business Analyst at Sileo Technology Solutions",
     linkedin: "https://www.linkedin.com/in/hitansi-amin/",
   },
   {
-    image: "",
+    image: imgNathan,
     name: "Nathan Eng",
     position: "Information Security Analyst at Aloha Pacific",
     linkedin: "https://www.linkedin.com/in/nathan-eng1/",
   },
   {
-    image: "",
+    image: imgTiffany,
     name: "Tiffany Ton",
     position: "Legal Data Analyst at Dolby Laboratories",
     linkedin: "https://www.linkedin.com/in/tiffanyhton/",
@@ -167,13 +176,13 @@ export const CHARACTERISTICS = [
     linkedin: "https://www.linkedin.com/in/debbiepang01/",
   },
   {
-    image: "",
+    image: imgDebbie,
     name: "Debbie Pang",
     position: "Intern at David Taussing & Associates, Inc.",
     linkedin: "",
   },
   {
-    image: "",
+    image: imgAshley,
     name: "Ashley Alvarez",
     position: "Analyst at Westlake Financial",
     linkedin: "https://www.linkedin.com/in/ashleyalvz/",
