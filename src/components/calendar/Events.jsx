@@ -48,27 +48,23 @@ const Events = ({ type }) => {
       : events.filter((event) => new Date(event.date) < new Date());
 
   return (
-    <div
-      className={`flex ${
-        type === "upcoming"
-          ? "justify-around p-5"
-          : "justify-center w-full font-nunito text-xl font-extrabold my-10"
-      }`}
-    >
+    <div className="flex justify-center font-nunito text-xl font-extrabold  my-10">
       {filteredEvents.length ? (
-        filteredEvents
-          .slice(type === "upcoming" ? 0 : -6)
-          .map((event, index) => (
-            <Event
-              key={event.id || index}
-              name={event.name}
-              month={moment(event.date).format("MMM").toUpperCase()}
-              day={moment(event.date).format("DD")}
-              location={event.location}
-            />
-          ))
+        <div className="grid grid-cols-3 w-9/12 gap-16 ">
+          {filteredEvents
+            .slice(type === "upcoming" ? 0 : -6)
+            .map((event, index) => (
+              <Event
+                key={index}
+                name={event.name}
+                month={moment(event.date).format("MMM").toUpperCase()}
+                day={moment(event.date).format("DD")}
+                location={event.location}
+              />
+            ))}
+        </div>
       ) : (
-        <div className="text-center text-black">
+        <div className="flex justify-center text-center text-black w-full">
           {type === "upcoming"
             ? "No upcoming events, please check back later!"
             : "No past events found."}
