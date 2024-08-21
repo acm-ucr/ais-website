@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import Image from "next/image";
 import Title from "./Title";
@@ -54,7 +54,7 @@ const Placement = () => {
               className="w-3/4 rounded-xl"
               src={item.image}
               alt="Company"
-              width={200}  // Set appropriate width
+              width={200} // Set appropriate width
               height={200} // Set appropriate height
             />
           </motion.div>
