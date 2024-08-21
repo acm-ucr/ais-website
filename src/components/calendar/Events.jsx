@@ -3,7 +3,7 @@ import moment from "moment";
 
 const Event = ({ name, month, day, location }) => {
   return (
-    <div className="font-nunito border rounded-lg border-black shadow-sm shadow-black py-2.5">
+    <div className="font-nunito border rounded-lg border-black shadow-sm shadow-black py-2.5 hover:scale-105 transition-transform">
       <div className="font-extrabold text-xl text-center pt-1 px-2">{name}</div>
       <div className="font-semibold text-base text-center pt-1 px-2">
         {month} {day}
@@ -48,9 +48,9 @@ const Events = ({ type }) => {
       : events.filter((event) => new Date(event.date) < new Date());
 
   return (
-    <div className="flex justify-center font-nunito text-xl font-extrabold  my-10">
+    <div className="flex justify-center font-nunito text-xl font-extrabold my-10">
       {filteredEvents.length ? (
-        <div className="grid grid-cols-3 w-9/12 gap-16 ">
+        <div className="grid grid-cols-3 w-9/12 gap-16">
           {filteredEvents
             .slice(type === "upcoming" ? 0 : -6)
             .map((event, index) => (
