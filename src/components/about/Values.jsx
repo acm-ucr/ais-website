@@ -14,7 +14,7 @@ const animation = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.5,
+      duration: 1,
       ease: "easeOut",
     },
   },
@@ -32,7 +32,7 @@ const Values = () => {
             initial="start"
             whileInView="end"
             variants={animation}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.8 }}
           >
             <Value
               title={item.title}
