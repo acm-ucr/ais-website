@@ -1,7 +1,30 @@
+'use client';
 import React from "react";
 import Image from "next/image";
 import Title from "./Title";
 import { Placements } from "@/data/placement";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  hidden: { opacity: 0, scale: 0.9 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      staggerChildren: 0.4,
+      when: "beforeChildren",
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6 },
+  },
+};
 
 const Placement = () => {
   return (
@@ -15,20 +38,28 @@ const Placement = () => {
         Check out where we work
       </div>
 
-      <div className="grid grid-cols-3 w-9/12 items-center justify-center gap-4">
+      <motion.div
+        className="grid grid-cols-3 w-9/12 items-center justify-center gap-4"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         {Placements.map((item, index) => (
-          <div
+          <motion.div
             key={index}
             className="flex justify-center items-center overflow-hidden mb-10"
+            variants={itemVariants}
           >
             <Image
-              className="size-3/4 rounded-xl"
+              className="w-3/4 rounded-xl"
               src={item.image}
               alt="Company"
+              width={200}  // Set appropriate width
+              height={200} // Set appropriate height
             />
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
