@@ -37,7 +37,8 @@ const Join = () => {
       <motion.div
         className="flex flex-col justify-center space-y-6 lg:mr-12 w-full lg:w-2/3 py-5"
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
       >
         <motion.div
           className="flex justify-center lg:justify-end text-center lg:text-right mt-20 lg:mt-0"
@@ -77,7 +78,8 @@ const Join = () => {
       <motion.div
         className="w-full lg:w-5/12 flex justify-center lg:justify-end relative h-60 md:h-96 lg:h-0 "
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
         variants={carouselAnimation}
       >
         <Carousel
