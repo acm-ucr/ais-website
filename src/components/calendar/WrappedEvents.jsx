@@ -1,16 +1,17 @@
 "use client";
 import { useState } from "react";
 import Calendar from "./Calendar";
-import Upcoming from "./Upcoming";
-import Past from "./Past";
+import Events from "./Events";
 import Filter from "../Filter";
 import { EVENTS } from "@/data/filters";
 
 const Wrapped = () => {
   const [component, setComponent] = useState("calendar");
+
   const handleFilterChange = (component) => {
     setComponent(component);
   };
+
   return (
     <div>
       <Filter
@@ -19,8 +20,8 @@ const Wrapped = () => {
         title={"EVENT OVERVIEW"}
       />
       {component === "calendar" && <Calendar />}
-      {component === "upcoming" && <Upcoming />}
-      {component === "past" && <Past />}
+      {component === "upcoming" && <Events type="upcoming" />}
+      {component === "past" && <Events type="past" />}
     </div>
   );
 };
