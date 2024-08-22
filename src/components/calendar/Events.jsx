@@ -1,16 +1,26 @@
 import React, { useEffect, useState } from "react";
 import moment from "moment";
+import { motion } from "framer-motion";
 
-const Event = ({ name, month, day, location }) => {
+const Event = ({ name, month, day, location, index }) => {
   return (
-    <div className="font-nunito border rounded-lg border-black shadow-sm shadow-black py-2.5">
-      <div className="font-extrabold text-xl text-center pt-1 px-2">{name}</div>
-      <div className="font-semibold text-base text-center pt-1 px-2">
-        {month} {day}
-      </div>
-      <div className="font-semibold text-base text-center pt-1 px-2">
-        {location}
-      </div>
+    <div className="hover:scale-105 transition-transform">
+      <motion.div
+        className="font-nunito border rounded-lg border-black shadow-sm shadow-black py-2.5"
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: index * 0.2, duration: 0.5 }}
+      >
+        <div className="font-extrabold text-xl text-center pt-1 px-2">
+          {name}
+        </div>
+        <div className="font-semibold text-base text-center pt-1 px-2">
+          {month} {day}
+        </div>
+        <div className="font-semibold text-base text-center pt-1 px-2">
+          {location}
+        </div>
+      </motion.div>
     </div>
   );
 };
@@ -48,9 +58,9 @@ const Events = ({ type }) => {
       : events.filter((event) => new Date(event.date) < new Date());
 
   return (
-    <div className="flex justify-center font-nunito text-xl font-extrabold  my-10">
+    <div className="flex justify-center font-nunito text-xl font-extrabold my-10">
       {filteredEvents.length ? (
-        <div className="grid grid-cols-3 w-9/12 gap-16 ">
+        <div className="grid grid-cols-3 w-9/12 gap-16">
           {filteredEvents
             .slice(type === "upcoming" ? 0 : -6)
             .map((event, index) => (
@@ -60,6 +70,7 @@ const Events = ({ type }) => {
                 month={moment(event.date).format("MMM").toUpperCase()}
                 day={moment(event.date).format("DD")}
                 location={event.location}
+                index={index}
               />
             ))}
         </div>
