@@ -12,7 +12,7 @@ const Navigation = () => {
   const [nav, setNav] = useState("");
 
   return (
-    <div className="absolute w-full flex justify-between items-center text-2x1 z-20 xl:px-5 md:py-4">
+    <div className="absolute w-full flex justify-between items-center text-2x1 z-20 md:px-5 md:py-4">
       <Link href="/" className="flex items-center pl-1 lg:pl-20">
         <Image alt="logo" src={logo} className="w-24 lg:w-36 md:h-auto" />
         <div className="flex-col text-white text-x1 md:text-2xl whitespace-nowrap">
@@ -21,7 +21,7 @@ const Navigation = () => {
           <p className="font-normal">AT UCR</p>
         </div>
       </Link>
-      <div className="hidden md:grid grid-cols-3 lg:flex justify-end w-full md:gap-4 ml-28 lg:gap-8 mr-0 lg:mr-12 text-white rounded-xl bg-transparent">
+      <div className="hidden lg:grid grid-cols-3 xl:flex justify-end w-full md:gap-4  min-[1025px]:ml-28 ml-40 lg:gap-8 mr-0 lg:mr-12 text-white rounded-xl bg-transparent">
         {items.map((item, index) => (
           <Link
             href={item.link}
