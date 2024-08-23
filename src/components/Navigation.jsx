@@ -16,21 +16,21 @@ const Navigation = () => {
   };
 
   return (
-    <div className="absolute w-full flex justify-between items-center text-2x1 px-4 z-20 md:px-5">
-      <Link href="/" className="flex items-center pl-1 md:pl-20">
+    <div className="absolute w-full flex justify-between items-center text-2x1 z-20 xl:px-5 md:py-4">
+      <Link href="/" className="flex items-center xl:pl-20">
         <Image alt="logo" src={logo} className="w-24 lg:w-36 md:h-auto" />
-        <div className="flex-col text-white text-x1 md:text-2xl whitespace-nowrap">
+        <div className="flex-col text-white text-xl lg:text-2xl">
           <p className="font-normal">ASSOCIATION FOR</p>
           <p className="font-bold">INFORMATION SYSTEMS</p>
           <p className="font-normal">AT UCR</p>
         </div>
       </Link>
-      <div className="hidden md:flex justify-end w-full lg:gap-4 lg:space-x-5 mr-12 text-white">
+      <div className="hidden md:grid grid-cols-3 xl:flex justify-end w-full md:gap-4 lg:gap-8 mr-12 text-white ml-28 bg-ais-blue-100 rounded-xl xl:bg-transparent">
         {items.map((item, index) => (
           <Link
             href={item.link}
             key={index}
-            className="hover:opacity-60 text-2xl duration-300"
+            className="hover:opacity-60 text-lg lg:text-2xl duration-300"
           >
             {item.name}
           </Link>
