@@ -85,14 +85,9 @@ const Join = () => {
         <Carousel
           images={JOIN}
           shadow={"shadow-[17px_-17px_0px_0px_#dce6f9]"}
-          init={"50%"}
+          init={"10%"}
           exit={"-10%"}
         />
-        {/* <Image
-          src={imagename}
-          className="shadow-[17px_-17px_0px_0px_#dce6f9] rounded-2xl mr-[17px] object-cover h-auto max-w-full"
-          alt="AIS team photo"
-        /> */}
       </motion.div>
     </div>
   );
