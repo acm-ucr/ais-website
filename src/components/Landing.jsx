@@ -19,7 +19,7 @@ const Landing = () => {
         <Image
           src={wave}
           alt="Wave 1"
-          className="object-cover w-full h-full absolute right-[0%] bottom-[0%] rotate-100"
+          className="object-cover w-full h-full absolute right-[0%] bottom-[0%] rotate-100 animate-[pulse_8s_infinite]"
         />
       </motion.div>
 
@@ -32,7 +32,7 @@ const Landing = () => {
         <Image
           src={wave2}
           alt="Wave 2"
-          className="object-cover w-full h-full absolute right-[10%] bottom-[20%] rotate-12 scale-125"
+          className="object-cover w-full h-full absolute right-[10%] bottom-[20%] rotate-12 scale-125 animate-[pulse_16s_ease-in-out_infinite]"
         />
       </motion.div>
 
