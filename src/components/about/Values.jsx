@@ -22,7 +22,13 @@ const animation = {
 
 const Values = () => {
   return (
-    <div className="flex flex-col items-center w-full gap-10 font-nunito">
+    <motion.div
+      initial="start"
+      whileInView="end"
+      variants={animation}
+      viewport={{ once: true, amount: 0.8 }}
+      className="flex flex-col items-center w-full gap-10 font-nunito"
+    >
       <Title title={"OUR VALUES"} />
       <div className="flex flex-col md:flex-row lg:flex-row justify-center gap-5 xl:gap-10 w-full">
         {VALUES.map((item, index) => (
@@ -44,7 +50,7 @@ const Values = () => {
           </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
