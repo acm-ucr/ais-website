@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Title from "../Title";
 import Carousel from "./Carousel";
@@ -21,14 +22,18 @@ const About = () => {
         /> */}
       </div>
       <div className="flex flex-col justify-center space-y-6 w-11/12 lg:w-2/3 py-5 text-left">
-        <div className="flex justify-center lg:justify-start">
-          <Title title={"ABOUT US"} />
-        </div>
         <motion.div
-          variants={Animation}
-          initial="hidden"
-          whileInView="visible"
-          transition={{ delay: 0.8 }}
+          initial={{ opacity: 0, x: 500 % 2 === 0 ? 50 : -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.2 }}
+          className="flex justify-center lg:justify-start"
+        >
+          <Title title={"ABOUT US"} />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 500 % 2 === 0 ? 50 : -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.25 }}
           className="text-left text-base sm:text-lg my-4"
         >
           We are the Association for Information Systems (AIS) at the University
