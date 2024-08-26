@@ -19,7 +19,7 @@ import imgIsabelle from "@/public/alumni/IsabelleS.webp";
 import imgNathan from "@/public/alumni/NathanE.webp";
 import imgSachi from "@/public/alumni/SachiR.webp";
 import imgTiffany from "@/public/alumni/TiffanyT.webp";
-import imgHannah from "@/public/alumni/HannahD.jpeg";
+import imgHannah from "@/public/alumni/HannahD.webp";
 
 export const BOARD = [
   // NOT INCLUDING Dr. Rich Yueh (rich.yueh@ucr.edu) - Faculty Advisor
