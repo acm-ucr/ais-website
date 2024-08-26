@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Intern from "./Intern";
-import { VARIABLES } from "@/data/board";
+import { INTERNS } from "@/data/board";
 import { motion } from "framer-motion";
 
 const animation = {
@@ -39,7 +39,7 @@ const Interns = () => {
         className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-y-14"
         variants={animation}
       >
-        {VARIABLES.slice(0, 6).map((intern, index) => (
+        {INTERNS.slice(0, 6).map((intern, index) => (
           <motion.div key={index} variants={itemAnimation}>
             <Intern
               key={index}
@@ -51,7 +51,7 @@ const Interns = () => {
         ))}
       </motion.div>
       <motion.div className="flex justify-center" variants={animation}>
-        {VARIABLES.slice(6).map((intern, index) => (
+        {INTERNS.slice(6).map((intern, index) => (
           <motion.div key={index} variants={itemAnimation}>
             <Intern
               key={index}

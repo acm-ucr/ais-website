@@ -30,7 +30,7 @@ const Values = () => {
       className="flex flex-col items-center w-full gap-10 font-nunito"
     >
       <Title title={"OUR VALUES"} />
-      <div className="flex flex-col md:flex-row lg:flex-row justify-center gap-5 xl:gap-10 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  justify-center gap-5 w-full">
         {VALUES.map((item, index) => (
           <motion.div
             key={index}

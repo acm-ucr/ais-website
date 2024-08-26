@@ -1,6 +1,6 @@
 import AboutLanding from "@/components/about/AboutLanding";
-import Offer from "@/components/calendar/Offer";
-import Wrapped from "@/components/calendar/WrappedEvents";
+import Offer from "@/components/events/Offer";
+import Wrapped from "@/components/events/WrappedEvents";
 
 const page = () => {
   return (
