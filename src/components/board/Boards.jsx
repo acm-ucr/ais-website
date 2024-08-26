@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Board from "./Board";
-import { VALUES } from "@/data/board";
+import { BOARD } from "@/data/board";
 import { motion } from "framer-motion";
 const Boards = () => {
   const containerVariants = {
@@ -41,7 +41,7 @@ const Boards = () => {
         className="flex flex-col md:flex-row items-center md:justify-around gap-14 md:gap-0"
         variants={containerVariants}
       >
-        {VALUES.slice(0, 2).map((item, index) => (
+        {BOARD.slice(0, 2).map((item, index) => (
           <motion.div key={index} variants={animations}>
             <Board
               image={item.img}
@@ -58,7 +58,7 @@ const Boards = () => {
         className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-y-14"
         variants={containerVariants}
       >
-        {VALUES.slice(2).map((item, index) => (
+        {BOARD.slice(2).map((item, index) => (
           <motion.div key={index} variants={animations}>
             <Board
               image={item.img}

@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import Title from "./Title";
+import Title from "../Title";
 
 const Opportunities = () => {
   const [data, setData] = useState([]);
