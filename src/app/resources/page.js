@@ -1,5 +1,5 @@
 import AboutLanding from "@/components/about/AboutLanding";
-import Opportunities from "@/components/Opportunities";
+import Opportunities from "@/components/resources/Opportunities";
 
 import React from "react";
 

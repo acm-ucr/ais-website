@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Calendar from "./Calendar";
+import Calendar from "./calendar/Calendar";
 import Events from "./Events";
 import Filter from "../Filter";
 import { EVENTS } from "@/data/filters";

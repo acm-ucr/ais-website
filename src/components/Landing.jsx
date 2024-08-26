@@ -78,14 +78,12 @@ const Landing = () => {
           >
             <Button
               text={"JOIN US"}
-              link={"https://youtu.be/ze-POGS94-k?si=GTi-7sfaI0m1z_YT"}
+              link={
+                "https://aisatucr.slack.com/join/shared_invite/zt-17p0a7or5-tXFXxwufY~vOQlFhkB0edQ#/shared-invite/email"
+              }
               target={"_blank"}
             />
-            <Button
-              text={"LEARN MORE"}
-              link={"https://www.youtube.com/watch?v=hJsE-9uu3bU"}
-              target={null}
-            />
+            <Button text={"LEARN MORE"} link={"about"} target={null} />
           </motion.div>
         </motion.div>
       </motion.div>
