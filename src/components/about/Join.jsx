@@ -76,7 +76,7 @@ const Join = () => {
       </motion.div>
 
       <motion.div
-        className="w-full lg:w-5/12 flex justify-center lg:justify-end relative h-60 md:h-96 lg:h-0 "
+        className="w-full lg:w-5/6 xl:w-5/12 flex justify-center lg:justify-end relative h-60 md:h-96 lg:h-0 lg:my-32 xl:my-0"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}

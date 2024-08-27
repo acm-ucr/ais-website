@@ -12,7 +12,7 @@ const Navigation = () => {
   const [nav, setNav] = useState("");
 
   return (
-    <div className="absolute w-full flex justify-between items-center text-2x1 z-20 md:px-5 md:py-4">
+    <div className="absolute w-full flex justify-between items-center text-2x1 z-20 md:px-5 md:py-4 lg:px-0">
       <Link href="/" className="flex items-center pl-1 lg:pl-20">
         <Image alt="logo" src={logo} className="w-24 lg:w-36 md:h-auto" />
         <div className="flex-col text-white text-x1 md:text-2xl whitespace-nowrap">
