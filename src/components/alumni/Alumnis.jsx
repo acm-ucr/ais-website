@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import Alumni from "./Alumni";
 import { ALUMNI } from "@/data/board";
@@ -11,8 +11,8 @@ const containerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2, 
-      delayChildren: 0.5,   
+      staggerChildren: 0.2,
+      delayChildren: 0.5,
     },
   },
 };
@@ -46,7 +46,7 @@ const Alumnis = () => {
             key={index}
             variants={cardVariants}
             className="flex justify-center items-center overflow-hidden mb-10"
-            viewport={{ once: true, amount: 0.1 }} 
+            viewport={{ once: true, amount: 0.1 }}
           >
             <Alumni
               image={alumni.image}

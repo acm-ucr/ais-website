@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import Title from "./Title";
 import { Placements } from "@/data/placement";
 
-
 const containerVariants = {
   hidden: {
     opacity: 0,
