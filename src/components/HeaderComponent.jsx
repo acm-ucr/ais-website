@@ -6,7 +6,7 @@ const AboutLanding = ({ header }) => {
   return (
     <div className="relative">
       <div className="absolute inset-0 z-10 flex items-center justify-center text-4xl font-bold text-white">
-        if(header = "")
+        if(header)
         {header}
       </div>
       <div className="relative h-screen bg-gradient-to-b from-ais-blue-100 via-ais-blue-200  to-ais-blue-300">
