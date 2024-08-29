@@ -10,5 +10,8 @@ export const ICONS = [
     icon: <FaLinkedin />,
     link: "https://www.linkedin.com/company/aisatucr/",
   },
-  { icon: <FaSlack />, link: "https://slack.com/yourworkspace" },
+  {
+    icon: <FaSlack />,
+    link: "https://aisatucr.slack.com/join/shared_invite/zt-17p0a7or5-tXFXxwufY~vOQlFhkB0edQ#/shared-invite/email",
+  },
 ];
