@@ -17,11 +17,10 @@ const containerVariants = {
   },
 };
 
-// Individual card animation variants
 const cardVariants = {
   hidden: {
     opacity: 0,
-    y: 30, // Start position of the animation (appears to come from the bottom)
+    y: 30,
   },
   visible: {
     opacity: 1,
