@@ -1,12 +1,12 @@
 import Wrapped from "@/components/board/WrappedBoard";
-import AboutLanding from "@/components/about/AboutLanding";
+import Header from "@/components/HeaderComponent";
 
 import React from "react";
 
 const page = () => {
   return (
     <div>
-      <AboutLanding header={"OUR BOARD"} />
+      <Header header={"OUR BOARD"} />
       <Wrapped />
     </div>
   );
