@@ -38,7 +38,7 @@ const Opportunities = () => {
   return (
     <div className="w-full flex justify-center items-center flex-col font-nunito gap-4 my-10">
       <Title title={"Opportunities"} />
-      {data.length > 0 ? (
+      {data.slice(1).length > 0 ? (
         <>
           {/* desktop view */}
           <div className="hidden md:flex flex-col items-center justify-center w-5/6 border-4 border-ais-blue-200 rounded-lg bg-ais-blue-300">
