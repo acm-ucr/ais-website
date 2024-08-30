@@ -32,7 +32,6 @@ const CalendarEvent = () => {
 
         const offset = new Date().getTimezoneOffset() * 60000;
         const data = await response.json();
-        console.log(data);
         const items = data.items.map((item) => {
           item.allDay = !item.start.dateTime;
           (item.start = item.start.dateTime
@@ -55,9 +54,9 @@ const CalendarEvent = () => {
   }, []);
 
   return (
-    <section className="w-full flex justify-center items-center flex-col mt-[5vh] font-nunito">
+    <section className="w-full flex justify-center items-center flex-col mt-14 font-nunito">
       <Title text={"Calendar"} />
-      <div className="h-[100vh] w-10/12 relative mt-10 mb-56 bg-ais-blue-100 rounded-xl z-0 font-nunito">
+      <div className="h-[100vh] w-10/12 relative mt-10 my-10 bg-ais-blue-100 rounded-xl z-0 font-nunito ">
         <Calendar
           date={date}
           className="w-full m-0 p-0 text-sm md:text-2xl "
