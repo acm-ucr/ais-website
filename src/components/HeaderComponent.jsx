@@ -30,7 +30,11 @@ const AboutLanding = ({ header }) => {
             <Image className="w-full" src={alumniLanding} alt="Alumni Wave" />
           )}
           {header === "PROFESSIONAL DEVELOPMENT" && (
-            <Image className="w-full" src={resourcesLanding} alt="Alumni Wave" />
+            <Image
+              className="w-full"
+              src={resourcesLanding}
+              alt="Alumni Wave"
+            />
           )}
         </div>
       </div>
