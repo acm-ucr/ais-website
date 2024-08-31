@@ -19,8 +19,9 @@ import imgIsabelle from "@/public/alumni/IsabelleS.webp";
 import imgNathan from "@/public/alumni/NathanE.webp";
 import imgSachi from "@/public/alumni/SachiR.webp";
 import imgTiffany from "@/public/alumni/TiffanyT.webp";
+import imgHannah from "@/public/alumni/HannahD.webp";
 
-export const VALUES = [
+export const BOARD = [
   // NOT INCLUDING Dr. Rich Yueh (rich.yueh@ucr.edu) - Faculty Advisor
   {
     img: imagename1,
@@ -94,7 +95,7 @@ export const VALUES = [
   },
 ];
 
-export const VARIABLES = [
+export const INTERNS = [
   {
     name: "Chandrahaas Mariserla",
     title: "Market Research Intern",
@@ -132,7 +133,7 @@ export const VARIABLES = [
   },
 ];
 
-export const CHARACTERISTICS = [
+export const ALUMNI = [
   {
     image: imgIsabelle,
     name: "Isabelle Sam",
@@ -170,7 +171,7 @@ export const CHARACTERISTICS = [
     linkedin: "https://www.linkedin.com/in/tiffanyhton/",
   },
   {
-    image: "",
+    image: imgHannah,
     name: "Hannah Dembla",
     position: "Marketing Specialist at Abbott",
     linkedin: "https://www.linkedin.com/in/debbiepang01/",

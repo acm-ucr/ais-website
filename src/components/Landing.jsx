@@ -19,7 +19,7 @@ const Landing = () => {
         <Image
           src={wave}
           alt="Wave 1"
-          className="object-cover w-full h-full absolute right-[0%] bottom-[0%] rotate-100"
+          className="object-cover w-full h-full absolute right-[0%] bottom-[0%] rotate-100 animate-[pulse_8s_infinite]"
         />
       </motion.div>
 
@@ -32,7 +32,7 @@ const Landing = () => {
         <Image
           src={wave2}
           alt="Wave 2"
-          className="object-cover w-full h-full absolute right-[10%] bottom-[20%] rotate-12 scale-125"
+          className="object-cover w-full h-full absolute right-[10%] bottom-[20%] rotate-12 scale-125 animate-[pulse_16s_ease-in-out_infinite]"
         />
       </motion.div>
 
@@ -78,14 +78,12 @@ const Landing = () => {
           >
             <Button
               text={"JOIN US"}
-              link={"https://youtu.be/ze-POGS94-k?si=GTi-7sfaI0m1z_YT"}
+              link={
+                "https://aisatucr.slack.com/join/shared_invite/zt-17p0a7or5-tXFXxwufY~vOQlFhkB0edQ#/shared-invite/email"
+              }
               target={"_blank"}
             />
-            <Button
-              text={"LEARN MORE"}
-              link={"https://www.youtube.com/watch?v=hJsE-9uu3bU"}
-              target={null}
-            />
+            <Button text={"LEARN MORE"} link={"about"} target={null} />
           </motion.div>
         </motion.div>
       </motion.div>
