@@ -2,10 +2,11 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Title from "../Title";
+import Loading from "../Loading";
 
 const Opportunities = () => {
   const [data, setData] = useState([]);
-
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     const spreadsheetData = async () => {
       const range = "Sheet1!A1:E15";
@@ -24,9 +25,11 @@ const Opportunities = () => {
           }));
 
           setData(items);
+          setLoading(false);
         })
         .catch((error) => {
           console.error("Error fetching spreadsheet data", error);
+          setLoading(false);
         });
     };
 
@@ -38,13 +41,17 @@ const Opportunities = () => {
   return (
     <div className="w-full flex justify-center items-center flex-col font-nunito gap-4 my-10">
       <Title title={"Opportunities"} />
-      {data.slice(1).length > 0 ? (
+      {loading ? (
+        <div>
+          <Loading />
+        </div>
+      ) : data.slice(1).length > 0 ? (
         <>
           {/* desktop view */}
           <div className="hidden md:flex flex-col items-center justify-center w-5/6 border-4 border-ais-blue-200 rounded-lg bg-ais-blue-300">
             <div className="flex text-xl font-bold text-center rounded-xl gap-y-10 my-0.5 w-full bg-ais-blue-200 text-white ">
               {headers.map((header, index) => (
-                <p key={index} className={`w-full py-2`}>
+                <p key={index} className="w-full py-2">
                   {data[0][header]}
                 </p>
               ))}
@@ -52,22 +59,22 @@ const Opportunities = () => {
 
             {data.slice(1).map((row, index) => (
               <div
-                className="grid grid-cols-5  text-xl text-center rounded-xl gap-y-10 my-0.5 w-full text-ais-blue-200"
+                className="grid grid-cols-5 text-xl text-center rounded-xl gap-y-10 my-0.5 w-full text-ais-blue-200"
                 key={index}
               >
                 <p className="flex items-center justify-center bg-white py-2">
                   {row.column1 || "N/A"}
                 </p>
-                <p className="flex items-center justify-center bg-white  py-2 mx-1">
+                <p className="flex items-center justify-center bg-white py-2 mx-1">
                   {row.column2 || "N/A"}
                 </p>
-                <p className="bg-white  py-2">{row.column3 || "N/A"}</p>
-                <p className="flex items-center justify-center bg-white  py-2 mx-1">
+                <p className="bg-white py-2">{row.column3 || "N/A"}</p>
+                <p className="flex items-center justify-center bg-white py-2 mx-1">
                   {row.column4 || "N/A"}
                 </p>
                 <Link
                   href={row.column5}
-                  className=" flex items-center justify-center bg-white w-full hover:text-ais-blue-300/70 py-2"
+                  className="flex items-center justify-center bg-white w-full hover:text-ais-blue-300/70 py-2"
                   rel="noopener noreferrer"
                 >
                   {"LINK" || "N/A"}
@@ -76,8 +83,8 @@ const Opportunities = () => {
             ))}
           </div>
           {/* mobile view */}
-          <div className=" md:hidden flex flex-col items-center justify-center w-11/12 border-4 border-ais-blue-200 rounded-lg bg-ais-blue-300">
-            <div className="flex  text-base md:text-xl font-bold text-center rounded-xl gap-y-10 my-0.5 w-full bg-ais-blue-500 text-white ">
+          <div className="md:hidden flex flex-col items-center justify-center w-11/12 border-4 border-ais-blue-200 rounded-lg bg-ais-blue-300">
+            <div className="flex text-base md:text-xl font-bold text-center rounded-xl gap-y-10 my-0.5 w-full bg-ais-blue-500 text-white">
               {headers.slice(1, 5).map((header, index) => (
                 <p
                   key={index}
@@ -92,7 +99,7 @@ const Opportunities = () => {
 
             {data.slice(1).map((row, index) => (
               <div
-                className="grid grid-cols-3  text-lg md:text-xl text-center rounded-xl gap-y-10 my-0.5 w-full text-ais-blue-200"
+                className="grid grid-cols-3 text-lg md:text-xl text-center rounded-xl gap-y-10 my-0.5 w-full text-ais-blue-200"
                 key={index}
               >
                 <p className="bg-white py-1.5 mx-0 flex items-center justify-center">
@@ -118,5 +125,4 @@ const Opportunities = () => {
     </div>
   );
 };
-
 export default Opportunities;

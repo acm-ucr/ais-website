@@ -8,7 +8,7 @@ const Button = ({ text, link, target }) => {
       ${
         text === "JOIN US"
           ? "border-2 border-white bg-transparent text-white py-2 px-4 md:py-2 md:px-8 hover:bg-white hover:text-ais-blue-100"
-          : "border-2 border-ais-blue-100 bg-white text-ais-blue-100 py-2 px-4 md:py-2 md:px-8 hover:bg-ais-blue-100 hover:text-white"
+          : "border-2 border-ais-blue-100 bg-white text-ais-blue-100 py-2 px-4 md:py-2 md:px-8 hover:bg-ais-blue-200/10 hover:text-white"
       }`}
     >
       <Link href={link} target={target} className="inline-block w-full h-full">
