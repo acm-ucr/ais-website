@@ -8,6 +8,7 @@ import CustomEvent from "./CustomEvents.jsx";
 import CustomHeader from "./CustomHeader.jsx";
 import Modal from "./Modal.jsx";
 import Title from "../../Title.jsx";
+import { motion } from "framer-motion";
 
 const localizer = momentLocalizer(moment);
 
@@ -56,46 +57,51 @@ const CalendarEvent = () => {
   return (
     <section className="w-full flex justify-center items-center flex-col mt-14 font-nunito">
       <Title text={"Calendar"} />
-      <div className="h-[100vh] w-10/12 relative mt-10 my-10 bg-ais-blue-100 rounded-xl z-0 font-nunito ">
-        <Calendar
-          date={date}
-          className="w-full m-0 p-0 text-sm md:text-2xl "
-          allDayAccessor="allDay"
-          showAllEvents={true}
-          events={events}
-          localizer={localizer}
-          defaultView="month"
-          views={["month"]}
-          components={{
-            event: CustomEvent,
-            toolbar: CustomToolbar,
-            header: CustomHeader,
-          }}
-          onNavigate={(newDate) => {
-            return setDate(newDate);
-          }}
-          eventPropGetter={() => {
-            return {
-              className: `p-0 !active:ring-0 !focus:outline-0 !bg-transparent`,
-            };
-          }}
-          onSelectEvent={(event) => setEvent(event)}
-          dayPropGetter={(event) => {
-            return {
-              className: `${
-                new Date(event).toLocaleDateString() ===
-                new Date().toLocaleDateString()
-                  ? "!bg-opacity-80 !bg-ais-blue-100"
-                  : "!bg-transparent"
-              }`,
-              style: {
-                margin: 0,
-                padding: 0,
-              },
-            };
-          }}
-        />
-      </div>
+      <motion.div
+      initial={{ opacity: 0, y: 15 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.75, delay: 0.5 }}
+      className="h-[100vh] w-10/12 relative mt-10 my-10 bg-ais-blue-100 rounded-xl z-0 font-nunito"
+      >
+          <Calendar
+            date={date}
+            className="w-full m-0 p-0 text-sm md:text-2xl "
+            allDayAccessor="allDay"
+            showAllEvents={true}
+            events={events}
+            localizer={localizer}
+            defaultView="month"
+            views={["month"]}
+            components={{
+              event: CustomEvent,
+              toolbar: CustomToolbar,
+              header: CustomHeader,
+            }}
+            onNavigate={(newDate) => {
+              return setDate(newDate);
+            }}
+            eventPropGetter={() => {
+              return {
+                className: `p-0 !active:ring-0 !focus:outline-0 !bg-transparent`,
+              };
+            }}
+            onSelectEvent={(event) => setEvent(event)}
+            dayPropGetter={(event) => {
+              return {
+                className: `${
+                  new Date(event).toLocaleDateString() ===
+                  new Date().toLocaleDateString()
+                    ? "!bg-opacity-80 !bg-ais-blue-100"
+                    : "!bg-transparent"
+                }`,
+                style: {
+                  margin: 0,
+                  padding: 0,
+                },
+              };
+            }}
+          />
+      </motion.div>
       {event && <Modal event={event} setEvent={setEvent} />}
     </section>
   );
