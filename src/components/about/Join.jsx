@@ -71,7 +71,6 @@ const Join = () => {
           <div>100+ members</div>
           <div>50+ events</div>
           <div>50+ alumni</div>
-          <div>etc etc</div>
         </motion.div>
       </motion.div>
 

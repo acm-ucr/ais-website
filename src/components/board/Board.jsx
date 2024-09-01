@@ -3,18 +3,6 @@ import Image from "next/image";
 import { IoMdMail } from "react-icons/io";
 import { FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
-import { motion } from "framer-motion";
-
-const animations = {
-  start: {
-    opacity: 0,
-    y: 30,
-  },
-  end: {
-    opacity: 1,
-    y: 0,
-  },
-};
 
 const Board = ({
   image,
@@ -25,14 +13,7 @@ const Board = ({
   target = "_blank",
 }) => {
   return (
-    <motion.div
-      className="w-80 rounded-2xl border border-black flex flex-col items-center gap-2 text-ais-blue-100"
-      variants={animations}
-      initial="start"
-      whileInView="end"
-      transition={{ duration: 0.1 }}
-      whileHover={{ scale: 1.05 }}
-    >
+    <div className="w-80 rounded-2xl border border-black flex flex-col items-center gap-2 text-ais-blue-100">
       <Image
         src={image}
         className="rounded-2xl object-cover h-80 p-0.5"
@@ -48,7 +29,7 @@ const Board = ({
           <FaLinkedinIn className="scale-150" />
         </Link>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
