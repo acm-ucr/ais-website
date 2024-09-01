@@ -33,12 +33,34 @@ const Boards = () => {
     <LazyMotion features={domAnimation}>
       <div className="flex flex-col gap-y-14">
         <m.div
+          className="flex flex-col md:flex-row items-center md:justify-around gap-14 md:gap-0"
+          variants={containerVariants}
+        >
+          {BOARD.slice(0, 2).map((item, index) => (
+            <m.div
+              key={index}
+              variants={cardVariants}
+              className="flex justify-center items-center overflow-hidden mb-10"
+              viewport={{ once: true, amount: 0.1 }}
+            >
+              <Board
+                image={item.img}
+                name={item.name}
+                position={item.position}
+                linkedin={item.linkedin}
+                email={item.email}
+              />
+            </m.div>
+          ))}
+        </m.div>
+
+        <m.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-y-14"
         >
-          {BOARD.map((item, index) => (
+          {BOARD.slice(2).map((item, index) => (
             <m.div
               key={index}
               variants={cardVariants}

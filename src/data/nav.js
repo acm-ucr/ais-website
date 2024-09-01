@@ -21,6 +21,6 @@ export const items = [
   },
   {
     name: "JOIN US",
-    link: "https://www.youtube.com/watch?v=USKD3vPD6ZA&t=74s",
+    link: "https://aisatucr.slack.com/join/shared_invite/zt-17p0a7or5-tXFXxwufY~vOQlFhkB0edQ#/shared-invite/email",
   },
 ];
