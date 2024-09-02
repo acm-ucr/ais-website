@@ -7,7 +7,12 @@ import { ABOUT } from "@/data/placement";
 
 const About = () => {
   return (
-    <div className="flex flex-col lg:flex-row mx-0 sm:mx-10 py-12 sm:px-10 gap-10 md:gap-10 justify-center font-nunito items-center lg:items-start">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      className="flex flex-col lg:flex-row mx-0 sm:mx-10 py-12 sm:px-10 gap-10 md:gap-10 justify-center font-nunito items-center lg:items-start"
+    >
       <div className="w-9/12 lg:w-2/3 xl:w-5/12 ml-4 sm:ml-0 relative h-52 md:h-96 lg:h-0 lg:my-20 xl:my-0">
         <Carousel
           images={ABOUT}
@@ -20,6 +25,7 @@ const About = () => {
         <motion.div
           initial={{ opacity: 0, x: 500 % 2 === 0 ? 10 : -10 }}
           whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ delay: 0.6, duration: 0.6, ease: "easeOut" }}
           className="flex justify-center lg:justify-start"
         >
@@ -28,6 +34,7 @@ const About = () => {
         <motion.div
           initial={{ opacity: 0, x: 500 % 2 === 0 ? 50 : -50 }}
           whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
           className="text-left text-base sm:text-lg my-4"
         >
@@ -42,7 +49,7 @@ const About = () => {
           speakers, and peers.
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

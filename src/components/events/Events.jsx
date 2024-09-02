@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import moment from "moment";
 import Loading from "../Loading";
 import Title from "../Title";
@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 
 const Event = ({ name, month, day, location, index }) => {
   return (
-    <div className="hover:scale-105 transition-transform">
+    <div className="hover:scale-105 transition-transform border border-black shadow-sm shadow-black rounded-lg">
       <motion.div
-        className="font-nunito border rounded-lg border-black shadow-sm shadow-black py-2.5"
+        className="font-nunito py-2.5"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: index * 0.2, duration: 0.5 }}
@@ -82,10 +82,10 @@ const Events = ({ type }) => {
           <Loading />
         </div>
       ) : (
-        <div className="flex flex-col items-center justify-center gap-7 font-nunito text-xl font-extrabold my-10 mx-auto">
+        <div className="flex flex-col items-center justify-center gap-7 font-nunito text-xl font-extrabold my-10">
           {type === "both" && <Title title={"UPCOMING EVENTS"} />}
           {filteredEvents.length ? (
-            <div className="grid grid-cols-3 w-9/12 gap-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-10/12 gap-16">
               {filteredEvents
                 .slice(type === "upcoming" ? 0 : -6)
                 .map((event, index) => (
