@@ -30,7 +30,7 @@ const itemAnimation = {
 const Interns = () => {
   return (
     <motion.div
-      className="flex flex-col gap-y-14"
+      className="flex flex-col gap-y-14 my-6"
       initial="hidden"
       animate="visible"
       variants={animation}

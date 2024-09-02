@@ -36,7 +36,7 @@ const Filter = ({ filters, onChange, title, className }) => {
   };
 
   return (
-    <div className="m-0 md:ml-6">
+    <div className="m-0 md:ml-6 text-center md:text-left">
       <Title title={title} />
       <motion.div
         className="flex space-x-4 mb-5 mt-4"

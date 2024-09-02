@@ -1,5 +1,8 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import moment from "moment";
+import Loading from "../Loading";
+import Title from "../Title";
 import { motion } from "framer-motion";
 
 const Event = ({ name, month, day, location, index }) => {
@@ -27,6 +30,7 @@ const Event = ({ name, month, day, location, index }) => {
 
 const Events = ({ type }) => {
   const [events, setEvents] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const startDate = moment().subtract(10, "weeks").toISOString();
@@ -46,42 +50,65 @@ const Events = ({ type }) => {
         }));
 
         setEvents(eventsData);
+        setLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching events", error);
+        setLoading(false);
       });
   }, []);
 
-  const filteredEvents =
-    type === "upcoming"
-      ? events.filter((event) => new Date(event.date) >= new Date())
-      : events.filter((event) => new Date(event.date) < new Date());
+  const filteredEvents = (() => {
+    if (type === "upcoming") {
+      return events.filter((event) => new Date(event.date) >= new Date());
+    } else if (type === "past") {
+      return events.filter((event) => new Date(event.date) < new Date());
+    } else if (type === "both") {
+      const pastEvents = events
+        .filter((event) => new Date(event.date) < new Date())
+        .slice(-3);
+      const upcomingEvents = events
+        .filter((event) => new Date(event.date) >= new Date())
+        .slice(0, 3);
+      return [...pastEvents, ...upcomingEvents];
+    }
+    return [];
+  })();
 
   return (
-    <div className="flex justify-center font-nunito text-xl font-extrabold my-10">
-      {filteredEvents.length ? (
-        <div className="grid grid-cols-3 w-9/12 gap-16">
-          {filteredEvents
-            .slice(type === "upcoming" ? 0 : -6)
-            .map((event, index) => (
-              <Event
-                key={index}
-                name={event.name}
-                month={moment(event.date).format("MMM").toUpperCase()}
-                day={moment(event.date).format("DD")}
-                location={event.location}
-                index={index}
-              />
-            ))}
+    <>
+      {loading ? (
+        <div>
+          <Loading />
         </div>
       ) : (
-        <div className="flex justify-center text-center text-black w-full">
-          {type === "upcoming"
-            ? "No upcoming events, please check back later!"
-            : "No past events found."}
+        <div className="flex flex-col items-center justify-center gap-7 font-nunito text-xl font-extrabold my-10 mx-auto">
+          {type === "both" && <Title title={"UPCOMING EVENTS"} />}
+          {filteredEvents.length ? (
+            <div className="grid grid-cols-3 w-9/12 gap-16">
+              {filteredEvents
+                .slice(type === "upcoming" ? 0 : -6)
+                .map((event, index) => (
+                  <Event
+                    key={index}
+                    name={event.name}
+                    month={moment(event.date).format("MMM").toUpperCase()}
+                    day={moment(event.date).format("DD")}
+                    location={event.location}
+                    index={index}
+                  />
+                ))}
+            </div>
+          ) : (
+            <div className="flex justify-center text-center text-black w-full">
+              {type === "upcoming" || "both"
+                ? "No upcoming events, please check back later!"
+                : "No past events found."}
+            </div>
+          )}
         </div>
       )}
-    </div>
+    </>
   );
 };
 
