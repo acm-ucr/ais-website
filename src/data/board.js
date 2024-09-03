@@ -1,5 +1,3 @@
-import fillerImage from "@/public/cat_placeholder.svg";
-
 import imagename1 from "@/public/board/JustinL.webp";
 import imagename2 from "@/public/board/AndrewN.webp";
 import imagename3 from "@/public/board/NikhilN.webp";
@@ -87,7 +85,7 @@ export const BOARD = [
     linkedin: "https://www.linkedin.com/in/raymond-ruiz-860066230/",
   },
   {
-    img: fillerImage,
+    img: "",
     name: "FRANKLIN TIEU",
     position: "MARKETING COORDINATOR",
     email: "franklintieu0@gmail.com",
