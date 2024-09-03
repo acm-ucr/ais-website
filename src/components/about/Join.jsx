@@ -48,7 +48,7 @@ const Join = () => {
           <Title title={"WHY JOIN"} />
         </motion.div>
         <motion.div
-          className="text-left lg:text-right text-base md:text-lg my-4"
+          className="w-10/12 sm:w-full text-left lg:text-right text-base md:text-lg my-4"
           variants={animation}
           custom={1}
         >
@@ -71,12 +71,11 @@ const Join = () => {
           <div>100+ members</div>
           <div>50+ events</div>
           <div>50+ alumni</div>
-          <div>etc etc</div>
         </motion.div>
       </motion.div>
 
       <motion.div
-        className="w-full lg:w-5/12 flex justify-center lg:justify-end relative h-60 md:h-96 lg:h-0 "
+        className="w-10/12 lg:w-5/6 xl:w-5/12 flex justify-center lg:justify-end relative h-60 md:h-96 lg:h-0 lg:my-32 xl:my-0"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
