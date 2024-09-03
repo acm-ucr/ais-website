@@ -99,7 +99,7 @@ export const INTERNS = [
   {
     name: "Chandrahaas Mariserla",
     title: "Market Research Intern",
-    linkedin: ".",
+    linkedin: "https://www.linkedin.com/in/chandrahaas-mariserla/",
   },
   {
     name: "Sally Li",
@@ -109,27 +109,27 @@ export const INTERNS = [
   {
     name: "Evan Tran",
     title: "Operations Intern",
-    linkedin: ".",
+    linkedin: "https://www.linkedin.com/in/evan-tran-8b73b11a4/",
   },
   {
     name: "Sumedha Chalasani",
     title: "Operations Intern",
-    linkedin: ".",
+    linkedin: "https://www.linkedin.com/in/sumedhach/",
   },
   {
     name: "Javier Becerill",
     title: "Communications Intern",
-    linkedin: ".",
+    linkedin: "https://www.linkedin.com/in/javibecerril/",
   },
   {
     name: "Roz Dastmalchi",
     title: "Marketing Intern",
-    linkedin: ".",
+    linkedin: "https://www.linkedin.com/in/roz-dastmalchi-817848295/",
   },
   {
     name: "Melissa Ortiz",
     title: "Marketing Intern",
-    linkedin: ".",
+    linkedin: "https://www.linkedin.com/in/melissaortiz249/",
   },
 ];
 
