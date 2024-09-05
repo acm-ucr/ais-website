@@ -14,15 +14,11 @@ const Board = ({
 }) => {
   return (
     <div className="w-80 rounded-2xl border border-black flex flex-col items-center gap-2 text-ais-blue-100">
-      {image ? (
-        <Image
-          src={image}
-          className="rounded-2xl object-cover h-80 p-0.5"
-          alt={name}
-        />
-      ) : (
-        <div className="h-80"></div>
-      )}
+      <Image
+        src={image}
+        className="rounded-2xl object-cover h-80 p-0.5"
+        alt={name}
+      />
       <div className="font-bold text-2xl">{name}</div>
       <div className="font-semibold text-lg">{position}</div>
       <div className="flex justify-center gap-5 mb-3">
