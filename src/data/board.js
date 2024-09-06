@@ -7,7 +7,7 @@ import imagename6 from "@/public/board/GarethC.webp";
 import imagename7 from "@/public/board/AnnyP.webp";
 import imagename8 from "@/public/board/OliviaN.webp";
 import imagename9 from "@/public/board/RaymondR.webp";
-// import imagename10 from "@/public/board/FranklinT.webp";
+import imagename10 from "@/public/board/FranklinT.webp";
 
 import imgAndrew from "@/public/alumni/AndrewD.webp";
 import imgAshley from "@/public/alumni/AshleyA.webp";
@@ -85,7 +85,7 @@ export const BOARD = [
     linkedin: "https://www.linkedin.com/in/raymond-ruiz-860066230/",
   },
   {
-    img: "",
+    img: imagename10,
     name: "FRANKLIN TIEU",
     position: "MARKETING COORDINATOR",
     email: "franklintieu0@gmail.com",
