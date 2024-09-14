@@ -11,7 +11,7 @@ const About = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
-      className="flex flex-col lg:flex-row mx-0 sm:mx-10 py-12 sm:px-10 gap-10 md:gap-10 justify-center font-nunito items-center lg:items-start"
+      className="flex flex-col lg:flex-row mx-0 sm:mx-10 py-12 sm:px-10 gap-10 md:gap-10 justify-center font-nunito items-center lg:items-start xl:pb-32"
     >
       <div className="w-9/12 lg:w-2/3 xl:w-5/12 ml-4 sm:ml-0 relative h-52 md:h-96 lg:h-0 lg:my-20 xl:my-0">
         <Carousel
