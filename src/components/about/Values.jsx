@@ -26,7 +26,7 @@ const Values = () => {
       initial="start"
       whileInView="end"
       variants={animation}
-      viewport={{ once: true, amount: 0.8 }}
+      viewport={{ once: true, amount: 0.1 }}
       className="flex flex-col items-center w-full gap-10 font-nunito"
     >
       <Title title={"OUR VALUES"} />
