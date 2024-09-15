@@ -48,7 +48,7 @@ const Landing = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="flex flex-col items-center md:items-start gap-3 max-w-xl w-full whitespace-normal lg:whitespace-nowrap lg:mx-36 lg:my-20 xl:my-0 xl:mx-0"
         >
-          <h1 className="text-xl md:text-4xl text-center md:text-left md:ml-[-98px] lg:ml-[-15px] xl:ml-4 mb-4 z-10">
+          <h1 className="text-xl md:text-4xl font-semibold text-center md:text-left md:ml-[-98px] lg:ml-[-15px] xl:ml-4 mb-4 z-10">
             EMPOWERING FUTURE INNOVATORS
           </h1>
 
