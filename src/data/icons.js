@@ -1,4 +1,4 @@
-import { FaInstagram, FaEnvelope, FaLinkedin, FaSlack } from "react-icons/fa";
+import { FaInstagram, FaEnvelope, FaLinkedin, FaDiscord } from "react-icons/fa";
 
 export const ICONS = [
   {
@@ -11,7 +11,7 @@ export const ICONS = [
     link: "https://www.linkedin.com/company/aisatucr/",
   },
   {
-    icon: <FaSlack />,
-    link: "https://aisatucr.slack.com/join/shared_invite/zt-17p0a7or5-tXFXxwufY~vOQlFhkB0edQ#/shared-invite/email",
+    icon: <FaDiscord />,
+    link: "https://discord.gg/KkX4h7n78V",
   },
 ];

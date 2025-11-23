@@ -78,9 +78,7 @@ const Landing = () => {
           >
             <Button
               text={"JOIN US"}
-              link={
-                "https://aisatucr.slack.com/join/shared_invite/zt-17p0a7or5-tXFXxwufY~vOQlFhkB0edQ#/shared-invite/email"
-              }
+              link={"https://discord.gg/KkX4h7n78V"}
               target={"_blank"}
             />
             <Button text={"LEARN MORE"} link={"about"} target={null} />
